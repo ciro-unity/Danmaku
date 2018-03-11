@@ -3,14 +3,35 @@ guid: da11eb03ee98f4261b9930b277b4c153
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Body
+    100002: Core
+    100004: Flap
+    100006: Head
+    100008: Jaw
+    100010: //RootNode
+    400000: Body
+    400002: Core
+    400004: Flap
+    400006: Head
+    400008: Jaw
+    400010: //RootNode
     2100000: Default
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Mesh
+    2300000: Flap
+    2300002: Head
+    2300004: Jaw
+    3300000: Flap
+    3300002: Head
+    3300004: Jaw
+    4300000: Body
+    4300002: Flap
+    4300004: Head
+    4300006: Jaw
+    4300008: Core
     7400000: Take 001
     9500000: //RootNode
+    13700000: Body
+    13700002: Core
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

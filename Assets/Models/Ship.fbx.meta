@@ -9,31 +9,54 @@ ModelImporter:
     100006: Mesh
     100008: Flap
     100010: ShipBody
+    100012: Body
+    100014: Core
+    100016: Head
+    100018: Jaw
     400000: //RootNode
     400002: Camera
     400004: Directional Light
     400006: Mesh
     400008: Flap
     400010: ShipBody
+    400012: Body
+    400014: Core
+    400016: Head
+    400018: Jaw
     2000000: Camera
     2100000: Default
     2300000: //RootNode
     2300002: Mesh
     2300004: Flap
+    2300006: Head
+    2300008: Jaw
+    2300010: Body
+    2300012: Core
     3300000: //RootNode
     3300002: Mesh
     3300004: Flap
+    3300006: Head
+    3300008: Jaw
+    3300010: Body
+    3300012: Core
     4300000: Mesh
     4300002: ShipBody
     4300004: Flap
+    4300006: Body
+    4300008: Head
+    4300010: Jaw
+    4300012: Core
     7400000: Take 001
     9500000: //RootNode
     10800000: Directional Light
     13700000: //RootNode
     13700002: ShipBody
+    13700004: Body
+    13700006: Core
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -51,7 +74,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -59,7 +82,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -87,7 +110,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -103,10 +126,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
