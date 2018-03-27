@@ -1,20 +1,36 @@
 using UnityEditor;
 using UnityEngine;
-
+/* 
 [CustomPropertyDrawer(typeof(PathWalkerBehaviour))]
 public class PathWalkerDrawer : PropertyDrawer
 {
-    public override float GetPropertyHeight (SerializedProperty property, GUIContent label)
-    {
-        int fieldCount = 1;
-        return fieldCount * EditorGUIUtility.singleLineHeight;
-    }
-
     public override void OnGUI (Rect position, SerializedProperty property, GUIContent label)
     {
-        SerializedProperty pathProp = property.FindPropertyRelative("path");
+        EditorGUILayout.PropertyField(property.FindPropertyRelative("path"));
+        EditorGUILayout.PropertyField(property.FindPropertyRelative("enemyDefinition"));
+    } 
 
-        Rect singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
-        EditorGUI.PropertyField(singleFieldRect, pathProp);
+    private void OnSceneGUI(SceneView v)
+    {
+
     }
 }
+
+[CustomEditor(typeof(PathWalkerClip))]
+public class PathWalkerClipInspector : Editor
+{
+    private void OnEnable()
+	{
+		SceneView.onSceneGUIDelegate += OnSceneGUI;
+	}
+
+    private void OnSceneGUI(SceneView v)
+	{
+        for(int i=0; i<10; i++)
+            {
+                float f = i/10f;
+                //Vector3 spherePos = lane.position + new Vector3(-f * xScale, 0f, 0f);
+                Handles.DrawWireCube(Vector3.zero, Vector3.one);
+            }
+    }
+}*/

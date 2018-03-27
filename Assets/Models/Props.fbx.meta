@@ -1,40 +1,35 @@
 fileFormatVersion: 2
-guid: da11eb03ee98f4261b9930b277b4c153
+guid: 54b1809202c074bd88a46726d697e00c
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Body
-    100002: Core
-    100004: Flap
-    100006: Head
-    100008: Jaw
-    100010: //RootNode
-    400000: Body
-    400002: Core
-    400004: Flap
-    400006: Head
-    400008: Jaw
-    400010: //RootNode
+    100000: Camera
+    100002: Directional Light
+    100004: Mesh
+    100006: //RootNode
+    100008: Rock1
+    100010: Texture Group
+    400000: Camera
+    400002: Directional Light
+    400004: Mesh
+    400006: //RootNode
+    400008: Rock1
+    400010: Texture Group
+    2000000: Camera
     2100000: Default
-    2300000: Flap
-    2300002: Head
-    2300004: Jaw
-    3300000: Flap
-    3300002: Head
-    3300004: Jaw
-    4300000: Body
-    4300002: Flap
-    4300004: Head
-    4300006: Jaw
-    4300008: Core
+    2300000: Mesh
+    2300002: Rock1
+    3300000: Mesh
+    3300002: Rock1
+    4300000: Mesh
+    4300002: Rock1
     7400000: Take 001
     9500000: //RootNode
-    13700000: Body
-    13700002: Core
+    10800000: Directional Light
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -68,8 +63,8 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -84,11 +79,11 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 180
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -104,10 +99,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
