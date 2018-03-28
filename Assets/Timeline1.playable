@@ -40,8 +40,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     enemyDefinition: {fileID: 0}
+    patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &114124379715873502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -61,8 +64,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     enemyDefinition: {fileID: 0}
+    patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &114228376860986846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,8 +176,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     enemyDefinition: {fileID: 0}
+    patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &114586896636665866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,29 +206,42 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.7805234
-        value: 0.28979588
-        inSlope: 1.4369712
-        outSlope: 1.4369712
+        time: 0.32454434
+        value: 0.38278097
+        inSlope: 0.16166207
+        outSlope: 0.16166207
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.25193185
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.82030225
+        value: 0.08005202
+        inSlope: 2.1468675
+        outSlope: 2.1468675
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.61709356
       - serializedVersion: 3
         time: 1
-        value: 1
+        value: 1.0171432
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      m_PreInfinity: 2
+      m_PreInfinity: 0
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: d9d049a45010d4c889f2c82c6098c054, type: 2}
+    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    patternDefinition: {fileID: 11400000, guid: b809f6c85e20545078bcd827934a8f96,
+      type: 2}
     xScale: 100
     yScale: 50
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 90, y: 30, z: 0}
 --- !u!114 &114677557949589200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,8 +261,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     enemyDefinition: {fileID: 0}
+    patternDefinition: {fileID: 0}
     xScale: 200
     yScale: 200
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &114825606426303976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -277,9 +302,12 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: d9d049a45010d4c889f2c82c6098c054, type: 2}
+    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 90, y: 15, z: 0}
 --- !u!114 &114935376118267204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -298,7 +326,7 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 1
+  - m_Start: 1.4666666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114949726223126702}
     m_Duration: 1
@@ -389,7 +417,7 @@ MonoBehaviour:
   - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114586896636665866}
-    m_Duration: 1
+    m_Duration: 3.683333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114938178550226172}
     m_EaseInDuration: 0
@@ -492,6 +520,9 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: d9d049a45010d4c889f2c82c6098c054, type: 2}
+    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
+    lanePosition: {x: 0, y: 0, z: 0}
+  lanePosition: {x: 90, y: 0, z: 0}

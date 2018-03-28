@@ -9,6 +9,16 @@ public class PathWalkerTrack : TrackAsset
 {
     public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
     {
-        return ScriptPlayable<PathWalkerMixerBehaviour>.Create (graph, inputCount);
+        var playable = ScriptPlayable<PathWalkerMixerBehaviour>.Create(graph, inputCount);
+
+        //store the lane starting position in the clips to allow correct calculation of the paths
+        Transform lane = go.GetComponent<PlayableDirector>().GetGenericBinding(this) as Transform;
+        foreach (var clip in m_Clips)
+        {
+            var playableAsset = clip.asset as PathWalkerClip;
+			playableAsset.lanePosition = lane.position;
+        }
+
+        return playable;
     }
 }

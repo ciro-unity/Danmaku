@@ -1,0 +1,14 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+
+[CreateAssetMenu(fileName = "Bullet", menuName = "Danmaku/Bullet Pattern Definition", order = 1)]
+[Serializable]
+public class BulletPatternDefinition : ScriptableObject
+{
+	public GameObject prefab;
+	public float startTime = 0f;
+	public float interval = 1f;
+	public int maxBullets = 0;
+}

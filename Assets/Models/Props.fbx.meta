@@ -9,20 +9,30 @@ ModelImporter:
     100006: //RootNode
     100008: Rock1
     100010: Texture Group
+    100012: BulletSmall
+    100014: BulletFireball
     400000: Camera
     400002: Directional Light
     400004: Mesh
     400006: //RootNode
     400008: Rock1
     400010: Texture Group
+    400012: BulletSmall
+    400014: BulletFireball
     2000000: Camera
     2100000: Default
     2300000: Mesh
     2300002: Rock1
+    2300004: BulletSmall
+    2300006: BulletFireball
     3300000: Mesh
     3300002: Rock1
+    3300004: BulletSmall
+    3300006: BulletFireball
     4300000: Mesh
     4300002: Rock1
+    4300004: BulletSmall
+    4300006: BulletFireball
     7400000: Take 001
     9500000: //RootNode
     10800000: Directional Light
