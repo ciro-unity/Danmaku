@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1687540470742338, guid: 0e986f0f3799947749c536ce0f82da6e, type: 2}
   tintColor: {r: 1, g: 1, b: 1, a: 1}
-  speed: 10
+  speed: 0.1
   life: 2

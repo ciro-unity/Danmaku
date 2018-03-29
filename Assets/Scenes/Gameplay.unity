@@ -1080,9 +1080,11 @@ PlayableDirector:
   - key: {fileID: 114935376118267204, guid: db9694f94d3954abc819e8b2471509f5, type: 2}
     value: {fileID: 1810058481}
   - key: {fileID: 114228376860986846, guid: db9694f94d3954abc819e8b2471509f5, type: 2}
-    value: {fileID: 401880703}
+    value: {fileID: 1810058481}
   - key: {fileID: 0}
     value: {fileID: 544620002}
+  - key: {fileID: 114601692057946502, guid: db9694f94d3954abc819e8b2471509f5, type: 2}
+    value: {fileID: 401880703}
   m_ExposedReferences:
     m_References:
     - a538df0696da2423390d577261e78174: {fileID: 544620002}

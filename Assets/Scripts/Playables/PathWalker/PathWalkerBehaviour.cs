@@ -12,18 +12,26 @@ public class PathWalkerBehaviour : PlayableBehaviour
     public BulletPatternDefinition patternDefinition;
     public float xScale = 100f, yScale = 50f;
 
-    private GameObject enemyInstance;
-    private GameObject[] bullets;
-    private Vector3 offset = Vector3.zero;
-
     [HideInInspector]
     public Vector3 lanePosition;
     [HideInInspector]
     public float duration;
 
-    //Takes care of instantiating the GameObject
+    private GameObject enemyInstance;
+    private GameObject[] bullets;
+    private Vector3 offset = Vector3.zero;
+
+
     public override void OnPlayableCreate (Playable playable)
     {
+        
+    }
+
+    //Takes care of instantiating the GameObject
+    public override void OnGraphStart(Playable playable)
+    {
+        duration = (float)playable.GetDuration();
+
         //create the associated prefab
         if(enemyDefinition != null)
         {
@@ -31,6 +39,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
             enemyInstance.SetActive(false);
         }
 
+        //bullet creation
         if(patternDefinition != null)
         {
             int nBullets = Mathf.CeilToInt(duration / patternDefinition.interval);
@@ -43,9 +52,10 @@ public class PathWalkerBehaviour : PlayableBehaviour
         }
     }
 
-    //Shows the enemy ship
+
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
+        //Shows the enemy ship
         if(enemyInstance != null)
         {
             enemyInstance.SetActive(true);
@@ -69,25 +79,27 @@ public class PathWalkerBehaviour : PlayableBehaviour
         Transform lane = playerData as Transform;
         if(lane != null && enemyInstance != null)
         {
-            enemyInstance.transform.position = lanePosition + GetOffsetFromPathEnd(clipTime);
+            enemyInstance.transform.position = lanePosition + GetOffsetFromPathEnd(clipTime * enemyDefinition.speed);
         }
 
         if(patternDefinition != null)
         {
             //Process bullets
-            int emittedBullets = Mathf.CeilToInt(clipTime/patternDefinition.interval);
-            float timeOfEmission = 0f;
-            for(int i = 0; i<emittedBullets; i++)
+            int emittedBulletsSoFar = Mathf.CeilToInt(clipTime/patternDefinition.interval);
+            for(int i = 0; i<bullets.Length; i++)
             {
-                timeOfEmission = i * patternDefinition.interval;
-                if(timeOfEmission >= clipTime)
+                float timeOfEmission = i * patternDefinition.interval;
+                float deltaTime = (Application.isPlaying) ? .02f : .02f;
+                Vector3 smallOffset = Vector3.left * 5f;
+                Vector3 bulletMovement = patternDefinition.direction.normalized * deltaTime * (clipTime-timeOfEmission) * patternDefinition.speed * 100f;
+                bullets[i].transform.position = lanePosition + GetOffsetFromPathEnd(timeOfEmission * enemyDefinition.speed) + bulletMovement + smallOffset;
+                if(timeOfEmission < clipTime - .01f) //artificial "one-frame" delay
                 {
-                    bullets[i].transform.position = lanePosition + GetOffsetFromPathEnd(timeOfEmission);
                     bullets[i].SetActive(true);
                 }
                 else
                 {
-                    //bullets[i].SetActive(false);
+                    bullets[i].SetActive(false);
                 }
             }
         }
@@ -106,8 +118,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
         return offset;
     }
 
-    //Takes care of destroying the GameObject, if it still exists
-    public override void OnPlayableDestroy(Playable playable)
+    public override void OnGraphStop(Playable playable)
     {
         if(enemyInstance != null)
         {
@@ -136,5 +147,11 @@ public class PathWalkerBehaviour : PlayableBehaviour
             }
             bullets = null;
         }
+    }
+
+    //Takes care of destroying the GameObject, if it still exists
+    public override void OnPlayableDestroy(Playable playable)
+    {
+        
     }
 }
