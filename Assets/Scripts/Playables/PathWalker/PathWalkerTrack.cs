@@ -12,11 +12,14 @@ public class PathWalkerTrack : TrackAsset
         var playable = ScriptPlayable<PathWalkerMixerBehaviour>.Create(graph, inputCount);
 
         //store the lane starting position in the clips to allow correct calculation of the paths
+        //store start times to allow bullet/ship calculations past the clip's length
         Transform lane = go.GetComponent<PlayableDirector>().GetGenericBinding(this) as Transform;
         foreach (var clip in m_Clips)
         {
             var playableAsset = clip.asset as PathWalkerClip;
 			playableAsset.lanePosition = lane.position;
+            playableAsset.clipStart = clip.start;
+            playableAsset.realDuration = clip.duration;
         }
 
         return playable;

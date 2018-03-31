@@ -6,6 +6,7 @@ public class PathWalkerClipDrawer : Editor
 {
     private Vector3 lanePos;
     private AnimationCurve path;
+    private float duration;
 
     void OnEnable()
     {
@@ -13,6 +14,7 @@ public class PathWalkerClipDrawer : Editor
         SceneView.onSceneGUIDelegate += this.OnSceneGUI;
         lanePos = serializedObject.FindProperty("lanePosition").vector3Value;
         path = serializedObject.FindProperty("template").FindPropertyRelative("path").animationCurveValue;
+        duration = (float)serializedObject.FindProperty("realDuration").doubleValue;
     }
 
     void OnDisable()
@@ -39,16 +41,17 @@ public class PathWalkerClipDrawer : Editor
         {
             PathWalkerClip c = target as PathWalkerClip;
             PathWalkerBehaviour b = c.template;
-            float duration = (float)c.duration; //this is currently forced to 1
 
             Handles.color = Color.magenta;
-            int nOfPoints = 30;
-            for(int i=0; i< 30*duration; i++)
+            float nOfPoints = 10f * duration;
+            for(int i=0; i< nOfPoints; i++)
             {
-                float t = (float)i * 1f/nOfPoints;
+                float t = i / 10f;//= (float)i * .1f * nOfPoints;
+                float t1 = (i+1) / 10f;
+                //Debug.Log("Point: " + i + " has t=" + t + " and t1=" + t1);
                 Handles.SphereHandleCap(0, lanePos + b.GetOffsetFromPathEnd(t), Quaternion.identity, .5f, EventType.Repaint);
                 Handles.DrawDottedLine(lanePos + b.GetOffsetFromPathEnd(t),
-                                        lanePos + b.GetOffsetFromPathEnd(t + duration * 1f/nOfPoints),
+                                        lanePos + b.GetOffsetFromPathEnd(t1),
                                         3f);
             }
         }

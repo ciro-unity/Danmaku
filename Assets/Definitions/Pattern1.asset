@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1250554257016114, guid: b85448198e4164d6a922e1483ce0a562, type: 2}
   startTime: 0
-  interval: 0.5
+  interval: 0.3
   maxBullets: 0
-  speed: 20
-  direction: {x: -1, y: -0.4}
+  speed: 30
+  direction: {x: -1, y: -0.3}

@@ -63,9 +63,12 @@ MonoBehaviour:
       type: 2}
     xScale: 100
     yScale: 50
-    lanePosition: {x: 90, y: 0, z: 0}
-    duration: 0
-  lanePosition: {x: 90, y: 0, z: 0}
+    lanePosition: {x: 192.26, y: -15, z: 0}
+    clipStart: 1.6666666666666667
+    duration: 2.9833333333333334
+  lanePosition: {x: 192.26, y: -15, z: 0}
+  clipStart: 1.6666666666666667
+  realDuration: 2.9833333333333334
 --- !u!114 &114083408871617574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,8 +92,11 @@ MonoBehaviour:
     xScale: 100
     yScale: 50
     lanePosition: {x: 0, y: 0, z: 0}
+    clipStart: 0
     duration: 0
   lanePosition: {x: 0, y: 0, z: 0}
+  clipStart: 0
+  realDuration: 0
 --- !u!114 &114124379715873502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,8 +120,11 @@ MonoBehaviour:
     xScale: 100
     yScale: 50
     lanePosition: {x: 0, y: 0, z: 0}
+    clipStart: 0
     duration: 0
   lanePosition: {x: 0, y: 0, z: 0}
+  clipStart: 0
+  realDuration: 0
 --- !u!114 &114207728293926318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,9 +165,12 @@ MonoBehaviour:
     patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
-    lanePosition: {x: 90, y: 0, z: 0}
-    duration: 0
-  lanePosition: {x: 90, y: 0, z: 0}
+    lanePosition: {x: 192.26, y: 0, z: 0}
+    clipStart: 4.65
+    duration: 1
+  lanePosition: {x: 192.26, y: 0, z: 0}
+  clipStart: 4.65
+  realDuration: 1
 --- !u!114 &114228376860986846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,10 +189,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.13333333333333333
+  - m_Start: 1.6666666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114082102006995566}
-    m_Duration: 7.75
+    m_Duration: 2.9833333333333334
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114228376860986846}
     m_EaseInDuration: 0
@@ -208,6 +220,39 @@ MonoBehaviour:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: PathWalkerClip
+    m_Version: 1
+  - m_Start: 4.666666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 114520010712665118}
+    m_Duration: 7.166666666666667
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114228376860986846}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -298,8 +343,11 @@ MonoBehaviour:
     xScale: 138.3
     yScale: 85
     lanePosition: {x: 90, y: 15, z: 0}
+    clipStart: 0
     duration: 0
   lanePosition: {x: 90, y: 15, z: 0}
+  clipStart: 0
+  realDuration: 0
 --- !u!114 &114498971394470016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,9 +371,12 @@ MonoBehaviour:
     xScale: 100
     yScale: 50
     lanePosition: {x: 0, y: 0, z: 0}
+    clipStart: 0
     duration: 0
   lanePosition: {x: 0, y: 0, z: 0}
---- !u!114 &114586896636665866
+  clipStart: 0
+  realDuration: 0
+--- !u!114 &114520010712665118
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -366,9 +417,68 @@ MonoBehaviour:
       type: 2}
     xScale: 100
     yScale: 50
-    lanePosition: {x: 90, y: 30, z: 0}
-    duration: 0
-  lanePosition: {x: 90, y: 30, z: 0}
+    lanePosition: {x: 192.26, y: -15, z: 0}
+    clipStart: 4.666666666666667
+    duration: 7.166666666666667
+  lanePosition: {x: 192.26, y: -15, z: 0}
+  clipStart: 4.666666666666667
+  realDuration: 7.166666666666667
+--- !u!114 &114586896636665866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b63c0db173d49808dab65312cdb526, type: 3}
+  m_Name: PathWalkerClip
+  m_EditorClassIdentifier: 
+  template:
+    path:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -0.002280403
+        value: 1
+        inSlope: 1.721465
+        outSlope: 1.721465
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.10717124
+      - serializedVersion: 3
+        time: 0.40286088
+        value: 1.0178298
+        inSlope: 0.51960564
+        outSlope: 0.51960564
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.1255023
+        outWeight: 0.08841587
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1.354153
+        outSlope: 1.354153
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.08508682
+        outWeight: 0.33333334
+      m_PreInfinity: 1
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    patternDefinition: {fileID: 11400000, guid: b809f6c85e20545078bcd827934a8f96,
+      type: 2}
+    xScale: 100
+    yScale: 50
+    lanePosition: {x: 192.26, y: 15, z: 0}
+    clipStart: 0.6333333333333333
+    duration: 1.7166666666666668
+  lanePosition: {x: 192.26, y: 15, z: 0}
+  clipStart: 0.6333333333333333
+  realDuration: 1.7166666666666668
 --- !u!114 &114601692057946502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -387,10 +497,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.45
+  - m_Start: 1.5666666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114455301154053400}
-    m_Duration: 5.65
+    m_Duration: 4.533333333333337
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114601692057946502}
     m_EaseInDuration: 0
@@ -457,6 +567,53 @@ MonoBehaviour:
     m_DisplayName: PathWalkerClip
     m_Version: 1
   m_Version: 1
+--- !u!114 &114656075502790418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b63c0db173d49808dab65312cdb526, type: 3}
+  m_Name: PathWalkerClip
+  m_EditorClassIdentifier: 
+  template:
+    path:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: -0.09699167
+        outSlope: -0.09699167
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.13073343
+        outWeight: 0.33333334
+      m_PreInfinity: 0
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    patternDefinition: {fileID: 11400000, guid: b809f6c85e20545078bcd827934a8f96,
+      type: 2}
+    xScale: 100
+    yScale: 102.15
+    lanePosition: {x: 192.26, y: 15, z: 0}
+    clipStart: 2.716666666666667
+    duration: 7.616666666666667
+  lanePosition: {x: 192.26, y: 15, z: 0}
+  clipStart: 2.716666666666667
+  realDuration: 7.616666666666667
 --- !u!114 &114677557949589200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,8 +637,11 @@ MonoBehaviour:
     xScale: 200
     yScale: 200
     lanePosition: {x: 0, y: 0, z: 0}
+    clipStart: 0
     duration: 0
   lanePosition: {x: 0, y: 0, z: 0}
+  clipStart: 0
+  realDuration: 0
 --- !u!114 &114849240751666852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -504,9 +664,12 @@ MonoBehaviour:
     patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
-    lanePosition: {x: 90, y: 0, z: 0}
-    duration: 0
-  lanePosition: {x: 90, y: 0, z: 0}
+    lanePosition: {x: 192.26, y: 0, z: 0}
+    clipStart: 24.916666666666668
+    duration: 1
+  lanePosition: {x: 192.26, y: 0, z: 0}
+  clipStart: 24.916666666666668
+  realDuration: 1
 --- !u!114 &114935376118267204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -519,13 +682,13 @@ MonoBehaviour:
   m_Name: Path Walker Track (1)
   m_EditorClassIdentifier: 
   m_Locked: 0
-  m_Muted: 1
+  m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 5.65
+  - m_Start: 24.916666666666668
     m_ClipIn: 0
     m_Asset: {fileID: 114849240751666852}
     m_Duration: 1
@@ -682,10 +845,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.13333333333333333
+  - m_Start: 0.6333333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114586896636665866}
-    m_Duration: 7.75
+    m_Duration: 1.7166666666666668
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114938178550226172}
     m_EaseInDuration: 0
@@ -718,25 +881,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -747,8 +892,41 @@ MonoBehaviour:
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 1.4666666666666666
+    m_DisplayName: PathWalkerClip
+    m_Version: 1
+  - m_Start: 2.716666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 114656075502790418}
+    m_Duration: 7.616666666666667
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114938178550226172}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 1.4666666666666666
     m_DisplayName: PathWalkerClip
     m_Version: 1
   m_Version: 1

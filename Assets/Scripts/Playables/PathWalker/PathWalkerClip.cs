@@ -8,13 +8,10 @@ public class PathWalkerClip : PlayableAsset, ITimelineClipAsset
 {
     public PathWalkerBehaviour template = new PathWalkerBehaviour();
     
-    // public AnimationCurve path;
-    // public EnemyDefinition enemyDefinition;
-    // public BulletPatternDefinition patternDefinition;
-    // public float xScale = 100f, yScale = 100f;
-    
-    [HideInInspector]
-    public Vector3 lanePosition; //just used as a temporary variable for the CustomInspector to use
+    //Data provided by the track, will be passed to the Behaviour
+    [HideInInspector] public Vector3 lanePosition; //just used as a temporary variable for the CustomInspector to use
+    [HideInInspector] public double clipStart;
+    [HideInInspector] public double realDuration;
 
     public ClipCaps clipCaps
     {
@@ -33,6 +30,8 @@ public class PathWalkerClip : PlayableAsset, ITimelineClipAsset
     public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
     {
         template.lanePosition = lanePosition;
+        template.clipStart = clipStart;
+        template.duration = realDuration;
         var playable = ScriptPlayable<PathWalkerBehaviour>.Create (graph, template);
         return playable;
     }

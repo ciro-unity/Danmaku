@@ -1,25 +1,45 @@
 fileFormatVersion: 2
-guid: df4f7d435d55b4060ac62828f7397254
+guid: 002d49f5d2f8e4137b29be0414687535
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Camera
-    100002: Directional Light
-    100004: //RootNode
-    100006: Rock1
-    400000: Camera
-    400002: Directional Light
-    400004: //RootNode
-    400006: Rock1
+    100000: //RootNode
+    100002: Body
+    100004: Camera
+    100006: Core
+    100008: Directional Light
+    100010: Shell
+    100012: Flap
+    100014: Eye
+    400000: //RootNode
+    400002: Body
+    400004: Camera
+    400006: Core
+    400008: Directional Light
+    400010: Shell
+    400012: Flap
+    400014: Eye
     2000000: Camera
     2100000: Default
-    2300000: Rock1
-    3300000: Rock1
-    4300000: Rock1
+    2300000: Body
+    2300002: Core
+    2300004: Shell
+    2300006: Flap
+    2300008: Eye
+    3300000: Body
+    3300002: Core
+    3300004: Shell
+    3300006: Flap
+    3300008: Eye
+    4300000: Body
+    4300002: Shell
+    4300004: Core
+    4300006: Flap
+    4300008: Eye
     10800000: Directional Light
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -53,8 +73,8 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -73,7 +93,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

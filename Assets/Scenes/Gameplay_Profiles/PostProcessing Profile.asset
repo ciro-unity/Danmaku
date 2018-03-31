@@ -26,16 +26,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 179
+    value: 353
   sampleCount:
     overrideState: 1
-    value: 5
+    value: 7
 --- !u!114 &114595949801032646
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -53,7 +53,7 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 70
+    value: 250
   aperture:
     overrideState: 1
     value: 1
@@ -101,7 +101,7 @@ MonoBehaviour:
     value: 1
   dirtTexture:
     overrideState: 0
-    value: {fileID: 2800000, guid: 7f83e3f8ef4df4449a40bce7a7d930b5, type: 3}
+    value: {fileID: 0}
   dirtIntensity:
     overrideState: 0
     value: 3.45
