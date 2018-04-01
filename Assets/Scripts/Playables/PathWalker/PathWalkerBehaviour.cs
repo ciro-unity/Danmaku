@@ -45,17 +45,20 @@ public class PathWalkerBehaviour : PlayableBehaviour
             shipInstance = GameObject.Instantiate<GameObject>(enemyDefinition.prefab);
             shipInstance.transform.right = Vector3.left;
             shipAnimator = shipInstance.GetComponent<Animator>();
+            shipInstance.GetComponent<Enemy>().energy = enemyDefinition.energy;
             shipInstance.SetActive(false);
         }
 
         //bullet creation
         if(patternDefinition != null)
         {
+            Transform poolContainerTransform = GameObject.Find("BulletPools").transform;
             int nBullets = Mathf.CeilToInt((float)duration / patternDefinition.interval);
             bullets = new GameObject[nBullets];
             for(int i=0; i<bullets.Length; i++)
             {
                 bullets[i] = GameObject.Instantiate<GameObject>(patternDefinition.prefab);
+                bullets[i].transform.SetParent(poolContainerTransform);
                 bullets[i].SetActive(false);
             }
         }

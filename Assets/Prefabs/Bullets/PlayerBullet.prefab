@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4242943001039154}
   - component: {fileID: 33251447227518520}
   - component: {fileID: 23655083895223628}
-  - component: {fileID: 135551962827166694}
+  - component: {fileID: 58128477413824796}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: PlayerBullet
@@ -84,15 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1250554257016114}
   m_Mesh: {fileID: 4300006, guid: 54b1809202c074bd88a46726d697e00c, type: 3}
---- !u!135 &135551962827166694
-SphereCollider:
+--- !u!58 &58128477413824796
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1250554257016114}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.30417842, y: -0.00006246567}
   serializedVersion: 2
-  m_Radius: 1.3
-  m_Center: {x: -0.12, y: -0.00006246567, z: 0}
+  m_Radius: 1.2600546

@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 	private const float RIGH_BOUNDARY = 200f;
 
 	private Transform[] bulletPool;
-	
+	private CameraManager cameraManager;
 	private new Rigidbody2D rigidbody2D;
 	private Animator animator;
 	private Vector2 input, inputRaw;
@@ -25,14 +25,17 @@ public class PlayerController : MonoBehaviour
 	{
 		rigidbody2D = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
+		cameraManager = CameraManager.Instance;
 
 		//instantiate bullet pool
-		bulletPool = new Transform[100];
+		Transform poolContainerTransform = GameObject.Find("BulletPools").transform;
+		bulletPool = new Transform[20];
 		GameObject newBullet;
 		for(int i=0; i<bulletPool.Length; i++)
 		{
 			newBullet = Instantiate<GameObject>(bulletPrefab);
 			newBullet.SetActive(false);
+			newBullet.transform.SetParent(poolContainerTransform);
 			bulletPool[i] = newBullet.transform;
 		}
 	}
@@ -120,6 +123,7 @@ public class PlayerController : MonoBehaviour
 		{
 			Destroy(otherBody);
 			energy --;
+			cameraManager.Shake();
 		}
 	}
 }

@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 95106689880506136}
   - component: {fileID: 50723218395570310}
   - component: {fileID: 58050444320815846}
+  - component: {fileID: 114299539475531140}
   m_Layer: 0
   m_Name: AlienShip
   m_TagString: Untagged
@@ -489,7 +490,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1739210083792196}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -533,3 +534,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114299539475531140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739210083792196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cebbe6be23b4e5f8c0b4ddfe1cb4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: 1

@@ -11,5 +11,5 @@ public class EnemyDefinition : ScriptableObject
 	public Color tintColor = Color.white;
 
 	public float speed = 10f;
-	public float life = 2f;
+	public int energy = 2;
 }
