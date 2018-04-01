@@ -90,7 +90,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
         if(lane != null && shipInstance != null)
         {
             shipInstance.transform.position = lanePosition + GetOffsetFromPathEnd(globalClipTime * enemyDefinition.speed);
-            if(Application.isPlaying)
+            if(shipAnimator.playableGraph.IsPlaying())
             {
                 moveDifference = (shipInstance.transform.position - previousShipPosition) * 2f;
                 float step = Time.deltaTime * 2f;
@@ -111,6 +111,10 @@ public class PathWalkerBehaviour : PlayableBehaviour
             //int emittedBulletsSoFar = Mathf.CeilToInt(globalClipTime/patternDefinition.interval);
             for(int i = 0; i<bullets.Length; i++)
             {
+                //check if the bullet was destroyed by a collision
+                if(bullets[i] == null)
+                    continue;
+
                 float timeOfEmission = i * patternDefinition.interval;
                 
                 if(timeOfEmission < globalClipTime)

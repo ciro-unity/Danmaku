@@ -71,6 +71,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4856128240262250}
   - component: {fileID: 95106689880506136}
+  - component: {fileID: 50723218395570310}
+  - component: {fileID: 58050444320815846}
   m_Layer: 0
   m_Name: AlienShip
   m_TagString: Untagged
@@ -478,6 +480,41 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1291568354092624}
   m_Mesh: {fileID: 4300006, guid: 002d49f5d2f8e4137b29be0414687535, type: 3}
+--- !u!50 &50723218395570310
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739210083792196}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &58050444320815846
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739210083792196}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.61
 --- !u!95 &95106689880506136
 Animator:
   serializedVersion: 3
