@@ -881,7 +881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   maxSpeed: 25
-  bulletSpeed: 10
+  bulletSpeed: 200
   bulletInterval: 0.1
   energy: 50
   bulletPrefab: {fileID: 1250554257016114, guid: af24d7dd36ad043c59da4dd455be8ae1,

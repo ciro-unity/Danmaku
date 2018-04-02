@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
 	[HideInInspector] public int energy = 1; //overwritten by the Timeline, picking it up from EnemyDefinition SO
+
+	public UnityEvent deadEvent;
 
 	private void OnCollisionEnter2D(Collision2D coll)
 	{
@@ -22,6 +25,8 @@ public class Enemy : MonoBehaviour
 
 	private void Die()
 	{
+		EffectsManager.Instance.PlayExplosion(transform.position);
+		deadEvent.Invoke(); //this will notify the Timeline ClipBehaviour, so it stops spawning bullets
 		Destroy(this.gameObject);
 	}
 }

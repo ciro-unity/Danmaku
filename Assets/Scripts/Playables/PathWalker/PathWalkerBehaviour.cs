@@ -24,6 +24,9 @@ public class PathWalkerBehaviour : PlayableBehaviour
     private Vector3 moveDifference;
     private float previousHorDiff, previousVertDiff;
     private Animator shipAnimator;
+    private double globalClipTime; //clip time, but can be negative or past clip duration
+    private bool shipIsAlive = true;
+    private double shipDeadTime; //time the ship associated was killed
 
     private int horizontalHash, verticalHash, shootHash;
 
@@ -46,6 +49,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
             shipInstance.transform.right = Vector3.left;
             shipAnimator = shipInstance.GetComponent<Animator>();
             shipInstance.GetComponent<Enemy>().energy = enemyDefinition.energy;
+            shipInstance.GetComponent<Enemy>().deadEvent.AddListener(ShipDeadHandler);
             shipInstance.SetActive(false);
         }
 
@@ -62,6 +66,13 @@ public class PathWalkerBehaviour : PlayableBehaviour
                 bullets[i].SetActive(false);
             }
         }
+    }
+
+    private void ShipDeadHandler()
+    {
+        //stop spawning bullets in MixerProcessFrame
+        shipIsAlive = false;
+        shipDeadTime = globalClipTime;
     }
 
 
@@ -85,8 +96,11 @@ public class PathWalkerBehaviour : PlayableBehaviour
 
     public void MixerProcessFrame(Playable thisPlayable, FrameData info, object playerData, double timelineCurrentTime)
     {
-        //double clipTime = thisPlayable.GetTime();
-        double globalClipTime = timelineCurrentTime - clipStart;
+        /* Calculate the clip time starting from the actual Timeline time
+            the only reason why we need this is because we need it to be able to be negative or past the clip's duration,
+            so we can handle bullets also after the clip ends
+            thisPlayable.GetTime() only gives time constrained to the clip duration */
+        globalClipTime = timelineCurrentTime - clipStart;
 
         //Moves the enemy ship on the path
         Transform lane = playerData as Transform;
@@ -111,7 +125,6 @@ public class PathWalkerBehaviour : PlayableBehaviour
         if(patternDefinition != null)
         {
             //Process bullets
-            //int emittedBulletsSoFar = Mathf.CeilToInt(globalClipTime/patternDefinition.interval);
             for(int i = 0; i<bullets.Length; i++)
             {
                 //check if the bullet was destroyed by a collision
@@ -120,9 +133,14 @@ public class PathWalkerBehaviour : PlayableBehaviour
 
                 float timeOfEmission = i * patternDefinition.interval;
                 
-                if(timeOfEmission < globalClipTime)
+                //Check if we actually need to move this bullet
+                bool bulletWasShot = timeOfEmission < globalClipTime;
+                bool shipAliveAtTimeOfShooting = shipIsAlive || timeOfEmission < shipDeadTime; //if ship is dead, then time of shot needs to be before it died
+                
+                if(bulletWasShot
+                    && shipAliveAtTimeOfShooting)
                 {
-                    //bullet has been shot
+                    //bullet has been shot, so we need to move it
                     if(!bullets[i].activeSelf)
                         bullets[i].SetActive(true);
 
@@ -133,7 +151,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
                 }
                 else
                 {
-                    //bullet hasn't been shot yet
+                    //bullet hasn't been shot yet, it stays hidden
                     if(bullets[i].activeSelf)
                         bullets[i].SetActive(false);
                 }

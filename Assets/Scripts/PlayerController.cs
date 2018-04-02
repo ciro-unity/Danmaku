@@ -82,6 +82,7 @@ public class PlayerController : MonoBehaviour
 
 	private void ShootBullet()
 	{
+		bool found = false;
 		for(int i=0; i<bulletPool.Length; i++)
 		{
 			//find an inactive bullet
@@ -89,10 +90,13 @@ public class PlayerController : MonoBehaviour
 			{
 				bulletPool[i].position = transform.position + new Vector3(3f, -2.3f, 0f);
 				bulletPool[i].gameObject.SetActive(true);
-
+				found = true;
 				break;
 			}
 		}
+
+		if(!found)
+			Debug.LogError("Wasn't able to find a free bullet. Maybe make the pool bigger?");
 	}
 
 	private void FixedUpdate()

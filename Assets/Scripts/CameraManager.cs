@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Serialization;
 
 public class CameraManager : Singleton<CameraManager>
 {
-	private CinemachineVirtualCamera vCam;
+	public CinemachineVirtualCamera gameplayVcam;
 	private CinemachineBasicMultiChannelPerlin noiseModule;
 	private Coroutine shakeCo;
 
 	private void Awake()
 	{
-		vCam = GetComponent<CinemachineVirtualCamera>();
-		noiseModule = vCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+		noiseModule = gameplayVcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
 	}
 
 	public void Shake()
