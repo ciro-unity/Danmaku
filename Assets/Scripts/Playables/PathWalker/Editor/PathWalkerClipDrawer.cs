@@ -10,11 +10,15 @@ public class PathWalkerClipDrawer : Editor
 
     void OnEnable()
     {
-        SceneView.onSceneGUIDelegate = null;
-        SceneView.onSceneGUIDelegate += this.OnSceneGUI;
-        lanePos = serializedObject.FindProperty("lanePosition").vector3Value;
-        path = serializedObject.FindProperty("template").FindPropertyRelative("path").animationCurveValue;
-        duration = (float)serializedObject.FindProperty("realDuration").doubleValue;
+        if(Selection.activeObject != null) //little hack to avoid Scene flashing issue on Editor Stop
+        {
+            SceneView.onSceneGUIDelegate = null;
+            SceneView.onSceneGUIDelegate += this.OnSceneGUI;
+
+            lanePos = serializedObject.FindProperty("lanePosition").vector3Value;
+            path = serializedObject.FindProperty("template").FindPropertyRelative("path").animationCurveValue;
+            duration = (float)serializedObject.FindProperty("realDuration").doubleValue;
+        }
     }
 
     void OnDisable()

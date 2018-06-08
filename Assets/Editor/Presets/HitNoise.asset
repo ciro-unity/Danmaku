@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f59e54f2bfd184b9dd451a678d089b, type: 3}
+  m_Name: HitNoise
+  m_EditorClassIdentifier: 
+  PositionNoise:
+  - X:
+      Frequency: 4.1
+      Amplitude: 10
+      Constant: 0
+    Y:
+      Frequency: 5
+      Amplitude: 10
+      Constant: 0
+    Z:
+      Frequency: 5
+      Amplitude: 1
+      Constant: 0
+  - X:
+      Frequency: 30
+      Amplitude: 10
+      Constant: 0
+    Y:
+      Frequency: 30
+      Amplitude: 10
+      Constant: 0
+    Z:
+      Frequency: 30
+      Amplitude: 1
+      Constant: 0
+  OrientationNoise:
+  - X:
+      Frequency: 0
+      Amplitude: 0
+      Constant: 0
+    Y:
+      Frequency: 0
+      Amplitude: 0
+      Constant: 0
+    Z:
+      Frequency: 10.3
+      Amplitude: 2
+      Constant: 0

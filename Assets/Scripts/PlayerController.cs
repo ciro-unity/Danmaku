@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 	private CameraManager cameraManager;
 	private new Rigidbody2D rigidbody2D;
 	private Animator animator;
-	private Vector2 input, inputRaw;
+	private Vector2 movement, rawMovement;
 	private Vector2 speedOperations;
 	private bool isShooting = false;
 	private float lastBulletTime = -1f;
@@ -39,17 +39,19 @@ public class PlayerController : MonoBehaviour
 			bulletPool[i] = newBullet.transform;
 		}
 	}
+
+	//called by the InputManager or Timeline
+	public void Inputs(Vector2 moveInput, Vector2 rawMoveInput, bool shootInput)
+	{
+		movement = moveInput;
+		rawMovement = rawMoveInput;
+		isShooting = shootInput;
+	}
 	
 	void Update ()
 	{
-		input.x = Input.GetAxis("Horizontal");
-		input.y = Input.GetAxis("Vertical");
-		inputRaw.x = Input.GetAxisRaw("Horizontal");
-		inputRaw.y = Input.GetAxisRaw("Vertical");
-		isShooting = Input.GetButton("Fire1");
-
-		animator.SetFloat("HorizontalMovement", input.x);
-		animator.SetFloat("VerticalMovement", input.y);
+		animator.SetFloat("HorizontalMovement", movement.x);
+		animator.SetFloat("VerticalMovement", movement.y);
 		animator.SetBool("IsShooting", isShooting);
 
 		if(isShooting
@@ -101,7 +103,7 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		rigidbody2D.AddForce(input * speed * 100f, ForceMode2D.Force);
+		rigidbody2D.AddForce(movement * speed * 100f, ForceMode2D.Force);
 
 		speedOperations = rigidbody2D.velocity;
 
@@ -112,7 +114,7 @@ public class PlayerController : MonoBehaviour
 			speedOperations *= maxSpeed;
 		}
 
-		if(inputRaw.sqrMagnitude < .02f)
+		if(rawMovement.sqrMagnitude < .02f)
 		{
 			speedOperations *= .9f; //slow down
 		}
@@ -125,9 +127,9 @@ public class PlayerController : MonoBehaviour
 		GameObject otherBody = coll.gameObject;
 		if(otherBody.CompareTag("EnemyBullet"))
 		{
-			Destroy(otherBody);
+			Destroy(otherBody); //remove the bullet after collision
 			energy --;
-			cameraManager.Shake();
+			cameraManager.Shake(1f);
 		}
 	}
 }

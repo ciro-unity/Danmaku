@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6fc80932b9c4f38a9e139e4f99510f, type: 3}
+  m_Name: FastEnemy
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1739210083792196, guid: 3603e5dff259a42829ec03ab2b27d975, type: 2}
+  tintColor: {r: 1, g: 1, b: 1, a: 1}
+  speed: 0.6
+  energy: 3
