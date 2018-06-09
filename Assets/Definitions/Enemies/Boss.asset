@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab6fc80932b9c4f38a9e139e4f99510f, type: 3}
-  m_Name: StrongSlow
+  m_Name: Boss
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1739210083792196, guid: eb7315a1ba3cb442d9a0842e8d3c5d34, type: 2}
+  prefab: {fileID: 1739210083792196, guid: eda82e4602c524f1994a59e3214962f8, type: 2}
   tintColor: {r: 1, g: 1, b: 1, a: 1}
-  speed: 0.3
-  energy: 10
+  speed: 0.1
+  energy: 30

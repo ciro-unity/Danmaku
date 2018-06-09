@@ -24,6 +24,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
     private Vector3 moveDifference;
     private float previousHorDiff, previousVertDiff;
     private Animator shipAnimator;
+    private AudioSource shipAudioSource;
     private double globalClipTime; //clip time, but can be negative or past clip duration
     private bool shipIsAlive = true;
     private double shipDeadTime; //time the ship associated was killed
@@ -48,6 +49,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
             shipInstance = GameObject.Instantiate<GameObject>(enemyDefinition.prefab);
             shipInstance.transform.right = Vector3.left;
             shipAnimator = shipInstance.GetComponent<Animator>();
+            shipAudioSource = shipInstance.GetComponent<AudioSource>();
             shipInstance.GetComponent<Enemy>().energy = enemyDefinition.energy;
             shipInstance.GetComponent<Enemy>().deadEvent.AddListener(ShipDeadHandler);
             shipInstance.SetActive(false);
@@ -142,7 +144,13 @@ public class PathWalkerBehaviour : PlayableBehaviour
                 {
                     //bullet has been shot, so we need to move it
                     if(!bullets[i].activeSelf)
+                    {
                         bullets[i].SetActive(true);
+                        if(Application.isPlaying)
+                        {
+                            shipAudioSource.Play(); //play shot SFX
+                        }
+                    }
 
                     float deltaTime = .02f; //(Application.isPlaying) ? Time.smoothDeltaTime : .02f;
                     Vector3 smallOffset = Vector3.left * 5f;

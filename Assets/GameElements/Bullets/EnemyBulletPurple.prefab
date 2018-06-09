@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23655083895223628}
   - component: {fileID: 58333673970763740}
   m_Layer: 0
-  m_Name: EnemyBullet
+  m_Name: EnemyBulletPurple
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1250554257016114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.2, y: -3.8, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4a04aae499b0546a7a681fc7ffeadf03, type: 2}
+  - {fileID: 2100000, guid: 95f07bb317f844ba4828e29a32716fd5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
