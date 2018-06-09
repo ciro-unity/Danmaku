@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[CreateAssetMenu(fileName = "Bullet", menuName = "Danmaku/Bullet Pattern Definition", order = 1)]
+[CreateAssetMenu(fileName = "Bullet", menuName = "Danmaku/Bullet Pattern Definition", order = 2)]
 [Serializable]
 public class BulletPatternDefinition : ScriptableObject
 {

@@ -7,6 +7,7 @@ public class EffectsManager : Singleton<EffectsManager>
 	public GameObject explosionPrefab;
 	
 	private ParticleSystem[] explosionPool;
+	private AudioSource audioSource;
 
 	private void Start()
 	{
@@ -34,6 +35,11 @@ public class EffectsManager : Singleton<EffectsManager>
 			{
 				explosionPool[i].transform.position = positionInSpace;
 				explosionPool[i].Play();
+				
+				audioSource = explosionPool[i].GetComponent<AudioSource>();
+				audioSource.pitch = Random.Range(.9f, 1.1f);
+				audioSource.Play();
+				
 				found = true;
 				break;
 			}

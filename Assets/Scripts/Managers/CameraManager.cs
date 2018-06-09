@@ -15,6 +15,6 @@ public class CameraManager : Singleton<CameraManager>
 
 	public void Shake(float amount = 1f)
 	{
-		impulseSource.GenerateImpulse(); 
+		impulseSource.GenerateImpulse(Vector3.down * amount); 
 	}
 }

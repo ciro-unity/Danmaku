@@ -17,18 +17,16 @@ public class UIManager : Singleton<UIManager>
 		hideDialogueTriggerHash = Animator.StringToHash("HideDialogue");
 	}
 
-	public void ShowDialogue(string charName, string dialogue, GameCharacters character)
+	public void ShowDialogue(DialogueBit bitOfDialogue)
 	{
-		characterNameLabel.text = charName;
-		dialogueLabel.text = dialogue;
-		portraitDisplayer.DisplayCharacter(character);
+		characterNameLabel.text = bitOfDialogue.characterName;
+		dialogueLabel.text = bitOfDialogue.line;
+		portraitDisplayer.DisplayCharacter(bitOfDialogue.character);
 		dialogueAnimator.SetTrigger(showDialogueTriggerHash);
 	}
-}
 
-//Characters appear in this enum in the order they appear in the scene, left to right
-public enum GameCharacters
-{
-	Kyle,
-	PunkGirl,
+	public void HideDialogue()
+	{
+		dialogueAnimator.SetTrigger(hideDialogueTriggerHash);
+	}
 }

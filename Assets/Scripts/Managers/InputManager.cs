@@ -20,6 +20,8 @@ public class InputManager : Singleton<InputManager>
 		player.Inputs(input, inputRaw, isShooting);
 	}
 
+	//When disabled by the Timeline, the InputManager will notify the player one last time with null input
+	//so the player stops moving and shooting
 	private void OnDisable()
 	{
 		player.Inputs(Vector2.zero, Vector2.zero, false);

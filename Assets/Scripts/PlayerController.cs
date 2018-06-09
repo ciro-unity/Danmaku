@@ -10,10 +10,13 @@ public class PlayerController : MonoBehaviour
 	public int energy; //50
 	public GameObject bulletPrefab;
 
+	private AudioSource audioSource;
+
 	private const float RIGH_BOUNDARY = 200f;
 
 	private Transform[] bulletPool;
 	private CameraManager cameraManager;
+	private AudioManager audioManager;
 	private new Rigidbody2D rigidbody2D;
 	private Animator animator;
 	private Vector2 movement, rawMovement;
@@ -21,12 +24,17 @@ public class PlayerController : MonoBehaviour
 	private bool isShooting = false;
 	private float lastBulletTime = -1f;
 
-	void Start ()
+	private void Awake()
 	{
+		audioSource = GetComponent<AudioSource>();
 		rigidbody2D = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		cameraManager = CameraManager.Instance;
+		audioManager = AudioManager.Instance;
+	}
 
+	void Start ()
+	{
 		//instantiate bullet pool
 		Transform poolContainerTransform = GameObject.Find("BulletPools").transform;
 		bulletPool = new Transform[20];
@@ -97,6 +105,9 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 
+		audioSource.pitch = Random.Range(.9f, 1.1f);
+		audioSource.Play();
+
 		if(!found)
 			Debug.LogError("Wasn't able to find a free bullet. Maybe make the pool bigger?");
 	}
@@ -130,6 +141,7 @@ public class PlayerController : MonoBehaviour
 			Destroy(otherBody); //remove the bullet after collision
 			energy --;
 			cameraManager.Shake(1f);
+			audioManager.PlaySfx();
 		}
 	}
 }
