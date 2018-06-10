@@ -9,6 +9,7 @@ public class DialogueBit : ScriptableObject
 {
 	public GameCharacters character;
 	public string line;
+	public AudioClip audioClip;
 
 	public string characterName
 	{

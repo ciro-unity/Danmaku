@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaf510f70fde4e73bba03f2de7eb1f1, type: 3}
-  m_Name: Reb_001_HeavyFire
+  m_Name: Kyle_001_Suspicious
   m_EditorClassIdentifier: 
-  character: 1
-  line: I'm under heavy fire here!
-  audioClip: {fileID: 8300000, guid: e03df82f72f1b4285accae07a3b72f1a, type: 3}
+  character: 0
+  line: It is suspicious indeed.
+  audioClip: {fileID: 8300000, guid: 8bd2514295ef746f4aec29aada479dee, type: 3}

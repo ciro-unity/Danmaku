@@ -8,6 +8,7 @@ public class UIManager : Singleton<UIManager>
 	public Animator dialogueAnimator;
 	public PortraitDisplayer portraitDisplayer;
 	public Text characterNameLabel, dialogueLabel;
+	public AudioSource panelAudioSource;
 	
 	private int showDialogueTriggerHash, hideDialogueTriggerHash;
 
@@ -25,7 +26,15 @@ public class UIManager : Singleton<UIManager>
 		if(Application.isPlaying)
 		{
 			dialogueAnimator.SetTrigger(showDialogueTriggerHash);
+			StartCoroutine(PlayVoiceClip(bitOfDialogue.audioClip));
 		}
+	}
+
+	public IEnumerator PlayVoiceClip(AudioClip clip)
+	{
+		yield return new WaitForSeconds(.5f);
+
+		panelAudioSource.PlayOneShot(clip);
 	}
 
 	public void HideDialogue()

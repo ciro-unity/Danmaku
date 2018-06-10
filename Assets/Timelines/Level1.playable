@@ -36,7 +36,25 @@ MonoBehaviour:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.5
+        inSlope: 1.2737486
+        outSlope: 1.2737486
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.28592515
+        value: 0.8641968
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.7373409
+        value: -0.0071105957
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -45,14 +63,14 @@ MonoBehaviour:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+        value: 0.5
+        inSlope: 1.9306799
+        outSlope: 1.9306799
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      m_PreInfinity: 2
+      m_PreInfinity: 1
       m_PostInfinity: 2
       m_RotationOrder: 4
     objectDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
@@ -62,10 +80,10 @@ MonoBehaviour:
     yScale: 50
     lanePosition: {x: 200, y: 0, z: 0}
     clipStart: 1.75
-    duration: 9.016666666666667
+    duration: 17.683333333333334
   lanePosition: {x: 200, y: 0, z: 0}
   clipStart: 1.75
-  realDuration: 9.016666666666667
+  realDuration: 17.683333333333334
 --- !u!114 &114525536209135474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,7 +105,7 @@ MonoBehaviour:
   - m_Start: 1.75
     m_ClipIn: 0
     m_Asset: {fileID: 114337628465492360}
-    m_Duration: 9.016666666666667
+    m_Duration: 17.683333333333334
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114525536209135474}
     m_EaseInDuration: 0

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   line: Help incoming!
+  audioClip: {fileID: 8300000, guid: 6f853c35994db468fa1492243e21bf0a, type: 3}

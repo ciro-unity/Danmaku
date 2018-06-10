@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 1
   line: "I'm entering an asteroid field\u2026"
+  audioClip: {fileID: 8300000, guid: d7c4754fbba564f26b35bc94b41bd60b, type: 3}

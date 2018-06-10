@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 1
   line: Let's see what you can do!
+  audioClip: {fileID: 8300000, guid: f92b46642819846dea010e73edb092b3, type: 3}

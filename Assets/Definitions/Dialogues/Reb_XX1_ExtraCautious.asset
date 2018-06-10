@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 1
   line: I need to be extra cautious.
+  audioClip: {fileID: 8300000, guid: 314de199c93a541dd81663865556a36b, type: 3}
