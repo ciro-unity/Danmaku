@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Name: StrongSlow
   m_EditorClassIdentifier: 
   prefab: {fileID: 1739210083792196, guid: eb7315a1ba3cb442d9a0842e8d3c5d34, type: 2}
-  tintColor: {r: 1, g: 1, b: 1, a: 1}
-  speed: 0.3
+  randomiseSize: 0
+  sizeVariation: 0.2
   energy: 10
+  speed: 0.2
+  randomiseSpeed: 0
+  speedVariation: 0.5

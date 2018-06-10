@@ -71,15 +71,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 60
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 3.7666666666666653
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 3.7666666666666653
   realDuration: 3.566666666666667
 --- !u!114 &114048608282886356
@@ -346,15 +346,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 80
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 10.099999999999993
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 10.099999999999993
   realDuration: 3.566666666666667
 --- !u!114 &114083408871617574
@@ -375,7 +375,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 0}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
@@ -403,7 +403,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 0}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
@@ -449,15 +449,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 8.616666666666664
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 8.616666666666664
   realDuration: 3.566666666666667
 --- !u!114 &114197304465197078
@@ -566,15 +566,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 80
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 8.216666666666665
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 8.216666666666665
   realDuration: 3.566666666666667
 --- !u!114 &114224660100860362
@@ -752,15 +752,15 @@ MonoBehaviour:
       m_PreInfinity: 1
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: b809f6c85e20545078bcd827934a8f96,
       type: 2}
     xScale: 28.69
     yScale: 37.47
-    lanePosition: {x: 192.26, y: 0, z: 0}
+    lanePosition: {x: 200, y: 0, z: 0}
     clipStart: 0
     duration: 11.299999999999999
-  lanePosition: {x: 192.26, y: 0, z: 0}
+  lanePosition: {x: 200, y: 0, z: 0}
   clipStart: 0
   realDuration: 11.299999999999999
 --- !u!114 &114321907527884934
@@ -855,15 +855,15 @@ MonoBehaviour:
       m_PreInfinity: 1
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 170a805c8c862484f89de75562f17c8e, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 6a80d57598e2e49f0ab689c9b22f12b5,
       type: 2}
     xScale: 43.02
     yScale: 120
-    lanePosition: {x: 192.26, y: 0, z: 0}
+    lanePosition: {x: 200, y: 0, z: 0}
     clipStart: 0
     duration: 34.733333333333334
-  lanePosition: {x: 192.26, y: 0, z: 0}
+  lanePosition: {x: 200, y: 0, z: 0}
   clipStart: 0
   realDuration: 34.733333333333334
 --- !u!114 &114429054906356922
@@ -1128,15 +1128,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 5.25
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 5.25
   realDuration: 3.566666666666667
 --- !u!114 &114463516899311808
@@ -1296,7 +1296,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 0}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 0}
     xScale: 100
     yScale: 50
@@ -1342,15 +1342,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 9.083333333333332
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 9.083333333333332
   realDuration: 3.566666666666667
 --- !u!114 &114510896998926632
@@ -1389,15 +1389,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 5.033333333333333
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 5.033333333333333
   realDuration: 3.566666666666667
 --- !u!114 &114533159747417956
@@ -1774,15 +1774,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 3.15
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 3.15
   realDuration: 3.566666666666667
 --- !u!114 &114656075502790418
@@ -1821,15 +1821,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 60
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 4.266666666666665
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 4.266666666666665
   realDuration: 3.566666666666667
 --- !u!114 &114677557949589200
@@ -1850,7 +1850,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 0}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 0}
     xScale: 200
     yScale: 200
@@ -1909,15 +1909,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 10.499999999999991
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 10.499999999999991
   realDuration: 3.566666666666667
 --- !u!114 &114697274230606018
@@ -1956,15 +1956,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 80
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 9.71666666666666
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 9.71666666666666
   realDuration: 3.566666666666667
 --- !u!114 &114699347349237794
@@ -2124,15 +2124,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 3.3666666666666667
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 3.3666666666666667
   realDuration: 3.566666666666667
 --- !u!114 &114725885888013204
@@ -2171,15 +2171,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 100
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 10.96666666666666
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 10.96666666666666
   realDuration: 3.566666666666667
 --- !u!114 &114748804989344898
@@ -2218,15 +2218,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: a2b08c06da9434d1793ff6b861819c0f,
       type: 2}
     xScale: 100
     yScale: 60
-    lanePosition: {x: 192.26, y: -30, z: 0}
+    lanePosition: {x: 200, y: -30, z: 0}
     clipStart: 5.6499999999999995
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: -30, z: 0}
+  lanePosition: {x: 200, y: -30, z: 0}
   clipStart: 5.6499999999999995
   realDuration: 3.566666666666667
 --- !u!114 &114761748451763524
@@ -2278,15 +2278,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 80
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 7.833333333333331
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 7.833333333333331
   realDuration: 3.566666666666667
 --- !u!114 &114808824793859552
@@ -2551,15 +2551,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 587c9085bc50d4e7fb8f542dd412aa84, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: 1e763db8b74684a7f8f671812374c96a,
       type: 2}
     xScale: 100
     yScale: 60
-    lanePosition: {x: 192.26, y: 30, z: 0}
+    lanePosition: {x: 200, y: 30, z: 0}
     clipStart: 6.149999999999998
     duration: 3.566666666666667
-  lanePosition: {x: 192.26, y: 30, z: 0}
+  lanePosition: {x: 200, y: 30, z: 0}
   clipStart: 6.149999999999998
   realDuration: 3.566666666666667
 --- !u!114 &114869243073038286
@@ -2616,15 +2616,15 @@ MonoBehaviour:
       m_PreInfinity: 1
       m_PostInfinity: 2
       m_RotationOrder: 4
-    enemyDefinition: {fileID: 11400000, guid: 11cd77aa5377a405f895e85cb8f0a886, type: 2}
+    objectDefinition: {fileID: 0}
     patternDefinition: {fileID: 11400000, guid: b809f6c85e20545078bcd827934a8f96,
       type: 2}
     xScale: 30
     yScale: 120
-    lanePosition: {x: 192.26, y: 0, z: 0}
+    lanePosition: {x: 200, y: 0, z: 0}
     clipStart: 1.6
     duration: 11.299999999999999
-  lanePosition: {x: 192.26, y: 0, z: 0}
+  lanePosition: {x: 200, y: 0, z: 0}
   clipStart: 1.6
   realDuration: 11.299999999999999
 --- !u!114 &114938178550226172

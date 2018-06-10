@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95397904849145620}
   - component: {fileID: 50317311608613562}
   - component: {fileID: 82445496842780584}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mutiny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 33678379971708538}
   - component: {fileID: 23822766859950398}
   - component: {fileID: 61672562663316586}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flap (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4292010818982670}
   - component: {fileID: 96940308842274390}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 33011634170547892}
   - component: {fileID: 23146826208125200}
   - component: {fileID: 61783436622340100}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 33131895859063498}
   - component: {fileID: 23343890885133630}
   - component: {fileID: 61885718876610672}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 33770784777180980}
   - component: {fileID: 23106961203759108}
   - component: {fileID: 61386878451651240}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flap (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 4405217086470504}
   - component: {fileID: 33176570489288042}
   - component: {fileID: 23266505387574432}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 33415739083472198}
   - component: {fileID: 23098600020393284}
   - component: {fileID: 58306997727198412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 33421646686788890}
   - component: {fileID: 23665071570473424}
   - component: {fileID: 61472426999454734}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

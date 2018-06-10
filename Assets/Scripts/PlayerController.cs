@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 	void Start ()
 	{
 		//instantiate bullet pool
-		Transform poolContainerTransform = GameObject.Find("BulletPools").transform;
+		Transform poolContainerTransform = GameObject.Find("BulletPool").transform;
 		bulletPool = new Transform[20];
 		GameObject newBullet;
 		for(int i=0; i<bulletPool.Length; i++)

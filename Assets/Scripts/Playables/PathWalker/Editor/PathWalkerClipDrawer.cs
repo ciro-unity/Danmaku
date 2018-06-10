@@ -53,9 +53,9 @@ public class PathWalkerClipDrawer : Editor
                 float t = i / 10f;//= (float)i * .1f * nOfPoints;
                 float t1 = (i+1) / 10f;
                 //Debug.Log("Point: " + i + " has t=" + t + " and t1=" + t1);
-                Handles.SphereHandleCap(0, lanePos + b.GetOffsetFromPathEnd(t), Quaternion.identity, .5f, EventType.Repaint);
-                Handles.DrawDottedLine(lanePos + b.GetOffsetFromPathEnd(t),
-                                        lanePos + b.GetOffsetFromPathEnd(t1),
+                Handles.SphereHandleCap(0, lanePos + b.GetOffsetFromLaneStart(t), Quaternion.identity, .5f, EventType.Repaint);
+                Handles.DrawDottedLine(lanePos + b.GetOffsetFromLaneStart(t),
+                                        lanePos + b.GetOffsetFromLaneStart(t1),
                                         3f);
             }
         }

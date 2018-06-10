@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab6fc80932b9c4f38a9e139e4f99510f, type: 3}
-  m_Name: FastAsteroid
+  m_Name: SlowAsteroid
   m_EditorClassIdentifier: 
   prefab: {fileID: 1555558800325606, guid: 18fc892094d2f41b3804a3c761a288e4, type: 2}
   randomiseRotation: 1
   randomiseSize: 1
   sizeVariation: 0.6
   energy: 2
-  speed: 1.2
+  speed: 0.3
   randomiseSpeed: 1
-  speedVariation: 0.3
+  speedVariation: 0.1

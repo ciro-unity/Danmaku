@@ -4,12 +4,13 @@ using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using UnityEditor;
 using UnityEngine.Animations;
+using UnityEngine.Serialization;
 
 [Serializable]
 public class PathWalkerBehaviour : PlayableBehaviour
 {
     public AnimationCurve path;
-    public EnemyDefinition enemyDefinition;
+    public PathObjectDefinition objectDefinition;
     public BulletPatternDefinition patternDefinition;
     public float xScale = 100f, yScale = 50f;
 
@@ -17,48 +18,47 @@ public class PathWalkerBehaviour : PlayableBehaviour
     [HideInInspector] public double clipStart; //fed by the clip
     [HideInInspector] public double duration; //used in the custom inspector
 
-    private GameObject shipInstance;
+    private GameObject objectInstance;
+    private PathObject pathObjScript;
     private GameObject[] bullets;
     private Vector3 offset = Vector3.zero;
-    private Vector3 previousShipPosition;
-    private Vector3 moveDifference;
-    private float previousHorDiff, previousVertDiff;
-    private Animator shipAnimator;
-    private AudioSource shipAudioSource;
     private double globalClipTime; //clip time, but can be negative or past clip duration
-    private bool shipIsAlive = true;
-    private double shipDeadTime; //time the ship associated was killed
-
-    private int horizontalHash, verticalHash, shootHash;
+    private bool objectIsAlive = true;
+    private double objectDeadTime; //time the ship associated was killed
+    private float objectSpeed; //cached because the SO might provide randomly changing speeds
 
     public override void OnPlayableCreate (Playable playable)
     {
-        //hashing the strings into ints for performance
-        horizontalHash = Animator.StringToHash("HorizontalMovement");
-        verticalHash = Animator.StringToHash("VerticalMovement");
-        shootHash = Animator.StringToHash("Shoot");
-        previousShipPosition = lanePosition;
+
     }
 
     //Takes care of instantiating the GameObject
     public override void OnGraphStart(Playable playable)
     {
         //create the associated prefab
-        if(enemyDefinition != null)
+        if(objectDefinition != null)
         {
-            shipInstance = GameObject.Instantiate<GameObject>(enemyDefinition.prefab);
-            shipInstance.transform.right = Vector3.left;
-            shipAnimator = shipInstance.GetComponent<Animator>();
-            shipAudioSource = shipInstance.GetComponent<AudioSource>();
-            shipInstance.GetComponent<Enemy>().energy = enemyDefinition.energy;
-            shipInstance.GetComponent<Enemy>().deadEvent.AddListener(ShipDeadHandler);
-            shipInstance.SetActive(false);
+            objectInstance = GameObject.Instantiate<GameObject>(objectDefinition.prefab);
+            objectInstance.transform.right = Vector3.left;
+            objectInstance.transform.localScale = Vector3.one * objectDefinition.sizeMultiplier;
+            if(objectDefinition.randomiseRotation) objectInstance.transform.rotation = UnityEngine.Random.rotation;
+            
+            pathObjScript = objectInstance.GetComponent<PathObject>();
+            pathObjScript.Initialize(objectDefinition);
+            pathObjScript.deadEvent.AddListener(objectDeadHandler);
+            
+            Transform poolContainerTransform = GameObject.Find("PathObjectPool").transform;
+            objectInstance.transform.SetParent(poolContainerTransform);
+            objectInstance.SetActive(false);
+            
+            objectSpeed = objectDefinition.Speed; //cached because the SO would otherwise give us a random one each time
         }
 
-        //bullet creation
+        
+		//bullet creation
         if(patternDefinition != null)
         {
-            Transform poolContainerTransform = GameObject.Find("BulletPools").transform;
+            Transform poolContainerTransform = GameObject.Find("BulletPool").transform;
             int nBullets = Mathf.CeilToInt((float)duration / patternDefinition.interval);
             bullets = new GameObject[nBullets];
             for(int i=0; i<bullets.Length; i++)
@@ -70,29 +70,29 @@ public class PathWalkerBehaviour : PlayableBehaviour
         }
     }
 
-    private void ShipDeadHandler()
+    private void objectDeadHandler()
     {
         //stop spawning bullets in MixerProcessFrame
-        shipIsAlive = false;
-        shipDeadTime = globalClipTime;
+        objectIsAlive = false;
+        objectDeadTime = globalClipTime;
     }
 
 
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
-        //Shows the enemy ship
-        if(shipInstance != null)
+        //Shows the path object
+        if(objectInstance != null)
         {
-            shipInstance.SetActive(true);
+            objectInstance.SetActive(true);
         }
     }
 
-    //Hides the enemy ship
+    //Hides the path object
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
-        if(shipInstance != null)
+        if(objectInstance != null)
         {
-            //enemyInstance.SetActive(false);
+            //objectInstance.SetActive(false);
         }
     }
 
@@ -106,22 +106,9 @@ public class PathWalkerBehaviour : PlayableBehaviour
 
         //Moves the enemy ship on the path
         Transform lane = playerData as Transform;
-        if(lane != null && shipInstance != null)
+        if(lane != null && objectInstance != null)
         {
-            shipInstance.transform.position = lanePosition + GetOffsetFromPathEnd(globalClipTime * enemyDefinition.speed);
-            if(shipAnimator.playableGraph.IsPlaying())
-            {
-                moveDifference = (shipInstance.transform.position - previousShipPosition) * 2f;
-                float step = Time.deltaTime * 2f;
-                float newAnimatorX = Mathf.Lerp(previousHorDiff, moveDifference.x, step);
-                float newAnimatorY = Mathf.Lerp(previousVertDiff, moveDifference.y, step);
-                shipAnimator.SetFloat(horizontalHash, newAnimatorX);
-                shipAnimator.SetFloat(verticalHash, newAnimatorY);
-                previousHorDiff = newAnimatorX;
-                previousVertDiff = newAnimatorY;
-
-                previousShipPosition = shipInstance.transform.position;
-            }
+            pathObjScript.Move(lanePosition + GetOffsetFromLaneStart(globalClipTime * objectSpeed));
         }
 
         if(patternDefinition != null)
@@ -137,7 +124,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
                 
                 //Check if we actually need to move this bullet
                 bool bulletWasShot = timeOfEmission < globalClipTime;
-                bool shipAliveAtTimeOfShooting = shipIsAlive || timeOfEmission < shipDeadTime; //if ship is dead, then time of shot needs to be before it died
+                bool shipAliveAtTimeOfShooting = objectIsAlive || timeOfEmission < objectDeadTime; //if ship is dead, then time of shot needs to be before it died
                 
                 if(bulletWasShot
                     && shipAliveAtTimeOfShooting)
@@ -148,14 +135,14 @@ public class PathWalkerBehaviour : PlayableBehaviour
                         bullets[i].SetActive(true);
                         if(Application.isPlaying)
                         {
-                            shipAudioSource.Play(); //play shot SFX
+                            //objectAudioSource.Play(); //play shot SFX
                         }
                     }
 
                     float deltaTime = .02f; //(Application.isPlaying) ? Time.smoothDeltaTime : .02f;
                     Vector3 smallOffset = Vector3.left * 5f;
                     Vector3 bulletMovement = patternDefinition.direction.normalized * deltaTime * ((float)globalClipTime-timeOfEmission) * patternDefinition.speed * 100f;
-                    bullets[i].transform.position = lanePosition + GetOffsetFromPathEnd(timeOfEmission * enemyDefinition.speed) + bulletMovement + smallOffset;
+                    bullets[i].transform.position = lanePosition + GetOffsetFromLaneStart(timeOfEmission * objectSpeed) + bulletMovement + smallOffset;
                 }
                 else
                 {
@@ -169,7 +156,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
 
     //Given a curve time, it calculates the offset from the path end
     //(the path end is the start position of the lane)
-    public Vector3 GetOffsetFromPathEnd(double t)
+    public Vector3 GetOffsetFromLaneStart(double t)
     {
         double pathTime = 1f - t;
 
@@ -181,15 +168,15 @@ public class PathWalkerBehaviour : PlayableBehaviour
 
     public override void OnGraphStop(Playable playable)
     {
-        if(shipInstance != null)
+        if(objectInstance != null)
         {
             if(Application.isPlaying)
             {
-                GameObject.Destroy(shipInstance);
+                GameObject.Destroy(objectInstance);
             }
             else
             {
-                GameObject.DestroyImmediate(shipInstance);
+                GameObject.DestroyImmediate(objectInstance);
             }
         }
 

@@ -17,7 +17,8 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         get
         {
-            if (applicationIsQuitting)
+            if (Application.isPlaying
+                && applicationIsQuitting)
             {
                 Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
                     "' already destroyed on application quit." +

@@ -17,11 +17,11 @@ TagManager:
   - 
   - PostProcessing
   - Characters
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerShip
+  - UIFader
+  - PlayerBullets
+  - Enemies
+  - EnemyBullets
   - 
   - 
   - 

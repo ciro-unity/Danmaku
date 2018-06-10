@@ -22,11 +22,17 @@ public class UIManager : Singleton<UIManager>
 		characterNameLabel.text = bitOfDialogue.characterName;
 		dialogueLabel.text = bitOfDialogue.line;
 		portraitDisplayer.DisplayCharacter(bitOfDialogue.character);
-		dialogueAnimator.SetTrigger(showDialogueTriggerHash);
+		if(Application.isPlaying)
+		{
+			dialogueAnimator.SetTrigger(showDialogueTriggerHash);
+		}
 	}
 
 	public void HideDialogue()
 	{
-		dialogueAnimator.SetTrigger(hideDialogueTriggerHash);
+		if(Application.isPlaying)
+		{
+			dialogueAnimator.SetTrigger(hideDialogueTriggerHash);
+		}
 	}
 }

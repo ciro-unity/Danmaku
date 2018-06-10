@@ -12,7 +12,7 @@ public class EffectsManager : Singleton<EffectsManager>
 	private void Start()
 	{
 		//instantiate explosions pool
-		Transform poolContainerTransform = GameObject.Find("EffectsPools").transform;
+		Transform poolContainerTransform = GameObject.Find("EffectsPool").transform;
 		explosionPool = new ParticleSystem[40];
 		GameObject newExplosion;
 		for(int i=0; i<explosionPool.Length; i++)

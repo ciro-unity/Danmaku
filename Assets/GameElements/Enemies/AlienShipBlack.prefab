@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4828281213995780}
   - component: {fileID: 96761160934095812}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4706933979763606}
   - component: {fileID: 33888981456621314}
   - component: {fileID: 23760683771356234}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 4890117650986450}
   - component: {fileID: 33961519316630852}
   - component: {fileID: 23566806474059152}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Flap (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4374558162310278}
   - component: {fileID: 33718313083846594}
   - component: {fileID: 23623962845841662}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Flap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 58050444320815846}
   - component: {fileID: 114299539475531140}
   - component: {fileID: 82740870468196174}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: AlienShipBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4554296794100562}
   - component: {fileID: 33225546809720168}
   - component: {fileID: 23746500465436504}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 4315552665053814}
   - component: {fileID: 33059110013350552}
   - component: {fileID: 23409637945462918}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 4565826774418358}
   - component: {fileID: 33010568070126414}
   - component: {fileID: 23054709823107732}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
