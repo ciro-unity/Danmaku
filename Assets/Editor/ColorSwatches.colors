@@ -14,3 +14,9 @@ MonoBehaviour:
   m_Presets:
   - m_Name: Dialogue UI Background
     m_Color: {r: 0.38679248, g: 0.38679248, b: 0.7176471, a: 0.30980393}
+  - m_Name: TextLightBlue
+    m_Color: {r: 0.3915094, g: 0.6634216, b: 1, a: 1}
+  - m_Name: TextDarkBlue
+    m_Color: {r: 0, g: 0.325397, b: 1, a: 1}
+  - m_Name: 
+    m_Color: {r: 0.526561, g: 0.36320752, b: 1, a: 1}
