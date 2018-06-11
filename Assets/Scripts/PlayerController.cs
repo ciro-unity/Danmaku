@@ -1,40 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
 	public float speed, maxSpeed; //5, 100
 	public float bulletSpeed; //10
 	public float bulletInterval; //.1
-	public int energy; //50
+	public int energy, totalEnergy;
 	public GameObject bulletPrefab;
 
-	private AudioSource audioSource;
-
-	private const float RIGH_BOUNDARY = 200f;
+	private const float RIGHT_BOUNDARY = 200f;
 
 	private Transform[] bulletPool;
 	private CameraManager cameraManager;
 	private AudioManager audioManager;
+	private GameManager gameManager;
 	private new Rigidbody2D rigidbody2D;
 	private Animator animator;
 	private Vector2 movement, rawMovement;
 	private Vector2 speedOperations;
 	private bool isShooting = false;
 	private float lastBulletTime = -1f;
-
+	private AudioSource audioSource;
+	
 	private void Awake()
 	{
 		audioSource = GetComponent<AudioSource>();
 		rigidbody2D = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
+		gameManager = GameManager.Instance;
 		cameraManager = CameraManager.Instance;
 		audioManager = AudioManager.Instance;
 	}
 
 	void Start ()
 	{
+		totalEnergy = energy;
+
 		//instantiate bullet pool
 		Transform poolContainerTransform = GameObject.Find("BulletPool").transform;
 		bulletPool = new Transform[20];
@@ -81,7 +85,7 @@ public class PlayerController : MonoBehaviour
 			{
 				bulletPool[i].Translate(Vector3.right * bulletSpeed * Time.deltaTime);
 
-				if(bulletPool[i].position.x > RIGH_BOUNDARY)
+				if(bulletPool[i].position.x > RIGHT_BOUNDARY)
 				{
 					//bullet is off-screen, deactivate
 					bulletPool[i].gameObject.SetActive(false);
@@ -140,8 +144,10 @@ public class PlayerController : MonoBehaviour
 		{
 			Destroy(otherBody); //remove the bullet after collision
 			energy --;
-			cameraManager.Shake(1f);
+			cameraManager.Shake(.5f);
 			audioManager.PlaySfx();
+
+			gameManager.OnPlayerHit((float)energy/(float)totalEnergy);
 		}
 	}
 }

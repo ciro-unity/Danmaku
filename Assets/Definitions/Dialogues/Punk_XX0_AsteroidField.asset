@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaf510f70fde4e73bba03f2de7eb1f1, type: 3}
-  m_Name: Reb_000_Lets
+  m_Name: Punk_XX0_AsteroidField
   m_EditorClassIdentifier: 
   character: 1
-  line: Let's see what you can do!
-  audioClip: {fileID: 8300000, guid: f92b46642819846dea010e73edb092b3, type: 3}
+  line: "I'm entering an asteroid field\u2026"
+  audioClip: {fileID: 8300000, guid: d7c4754fbba564f26b35bc94b41bd60b, type: 3}

@@ -8,7 +8,6 @@ public class PathObject : MonoBehaviour
 	[HideInInspector] public int energy = 1; //overwritten by the Timeline, picking it up from EnemyDefinition SO
 	[HideInInspector] public UnityEvent deadEvent;
 	
-    private PathObjectDefinition objectDefinition;
 	private CameraManager cameraManager;
 	private Animator animator;
     private AudioSource objectAudioSource;
@@ -31,8 +30,6 @@ public class PathObject : MonoBehaviour
 
 	public void Initialize(PathObjectDefinition pathObjDef)
 	{
-		objectDefinition = pathObjDef;
-
 		energy = pathObjDef.energy;
 		
 		animator = GetComponent<Animator>();
@@ -85,7 +82,7 @@ public class PathObject : MonoBehaviour
 
 	private void Die()
 	{
-		CameraManager.Instance.Shake(4f);
+		CameraManager.Instance.Shake(2f);
 		EffectsManager.Instance.PlayExplosion(transform.position);
 		deadEvent.Invoke(); //this will notify the Timeline ClipBehaviour, so it stops spawning bullets
 		Destroy(this.gameObject);

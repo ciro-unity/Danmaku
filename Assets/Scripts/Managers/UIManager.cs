@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : Singleton<UIManager>
 {
 	public Animator dialogueAnimator;
 	public PortraitDisplayer portraitDisplayer;
-	public Text characterNameLabel, dialogueLabel;
+	public TextMeshProUGUI characterNameLabel, dialogueLabel;
 	public AudioSource panelAudioSource;
+	public Transform healthBar;
 	
 	private int showDialogueTriggerHash, hideDialogueTriggerHash;
 
@@ -43,5 +45,10 @@ public class UIManager : Singleton<UIManager>
 		{
 			dialogueAnimator.SetTrigger(hideDialogueTriggerHash);
 		}
+	}
+
+	public void OnPlayerHit(float fraction)
+	{
+		healthBar.localScale = new Vector3(fraction, 1f, 1f);
 	}
 }
