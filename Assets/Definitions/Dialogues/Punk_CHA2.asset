@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaf510f70fde4e73bba03f2de7eb1f1, type: 3}
-  m_Name: Punk_XX1_ExtraCautious
+  m_Name: Punk_CHA2
   m_EditorClassIdentifier: 
   character: 1
-  line: I need to be extra cautious. It might be an ambush.
-  audioClip: {fileID: 8300000, guid: 314de199c93a541dd81663865556a36b, type: 3}
+  line: 
+  audioClip: {fileID: 8300000, guid: 165edfcbc4cd744e6a841f149b935f9e, type: 3}

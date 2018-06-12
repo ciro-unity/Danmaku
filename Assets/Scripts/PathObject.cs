@@ -84,6 +84,7 @@ public class PathObject : MonoBehaviour
 	{
 		CameraManager.Instance.Shake(2f);
 		EffectsManager.Instance.PlayExplosion(transform.position);
+		GameManager.Instance.OnEnemyDown();
 		deadEvent.Invoke(); //this will notify the Timeline ClipBehaviour, so it stops spawning bullets
 		Destroy(this.gameObject);
 	}

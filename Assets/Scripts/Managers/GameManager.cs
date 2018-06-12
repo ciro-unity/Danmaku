@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
 	private UIManager uiManager;
+	private int hits = 0;
 
 	private void Awake()
 	{
@@ -13,6 +14,13 @@ public class GameManager : Singleton<GameManager>
 
 	public void OnPlayerHit(float energyAmount)
 	{
-		uiManager.OnPlayerHit(energyAmount);
+		uiManager.OnPlayerHit(Mathf.Max(0f, energyAmount));
+	}
+
+	public void OnEnemyDown()
+	{
+		hits++;
+
+		uiManager.OnEnemyDown(hits);
 	}
 }

@@ -8,7 +8,7 @@ public class UIManager : Singleton<UIManager>
 {
 	public Animator dialogueAnimator;
 	public PortraitDisplayer portraitDisplayer;
-	public TextMeshProUGUI characterNameLabel, dialogueLabel;
+	public TextMeshProUGUI characterNameLabel, dialogueLabel, hitsCounter;
 	public AudioSource panelAudioSource;
 	public Transform healthBar;
 	
@@ -18,6 +18,11 @@ public class UIManager : Singleton<UIManager>
 	{
 		showDialogueTriggerHash = Animator.StringToHash("ShowDialogue");
 		hideDialogueTriggerHash = Animator.StringToHash("HideDialogue");
+	}
+
+	private void Start()
+	{
+		hitsCounter.text = "000";
 	}
 
 	public void ShowDialogue(DialogueBit bitOfDialogue)
@@ -50,5 +55,10 @@ public class UIManager : Singleton<UIManager>
 	public void OnPlayerHit(float fraction)
 	{
 		healthBar.localScale = new Vector3(fraction, 1f, 1f);
+	}
+
+	public void OnEnemyDown(int howManyHits)
+	{
+		hitsCounter.text = string.Format("{0:000}", howManyHits);
 	}
 }
