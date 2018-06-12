@@ -53,6 +53,8 @@ public class PathObjectDefinition : ScriptableObject
 	public float speedVariation = .2f;
 }
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(PathObjectDefinition))]
 public class PathObjectDefinitionDrawer : Editor
 {
@@ -91,3 +93,5 @@ public class PathObjectDefinitionDrawer : Editor
 		serializedObject.ApplyModifiedProperties();
 	}
 }
+
+#endif

@@ -71,7 +71,7 @@ public class PathObject : MonoBehaviour
 		{
 			energy --;
 			otherObject.SetActive(false); //remove the bullet after collision, but player bullets are just disabled
-			//CameraManager.Instance.Shake(1f);
+			cameraManager.Shake(.2f);
 
 			if(energy == 0)
 			{
@@ -82,7 +82,7 @@ public class PathObject : MonoBehaviour
 
 	private void Die()
 	{
-		CameraManager.Instance.Shake(2f);
+		cameraManager.Shake(2f);
 		EffectsManager.Instance.PlayExplosion(transform.position);
 		GameManager.Instance.OnEnemyDown();
 		deadEvent.Invoke(); //this will notify the Timeline ClipBehaviour, so it stops spawning bullets
