@@ -12,7 +12,10 @@ public class DialogueBehaviour : PlayableBehaviour
 
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
-        UIManager.Instance.ShowDialogue(bitOfDialogue);
+        if(bitOfDialogue != null)
+        {
+            UIManager.Instance.ShowDialogue(bitOfDialogue);
+        }
         dialogueHidden = false;
     }
 

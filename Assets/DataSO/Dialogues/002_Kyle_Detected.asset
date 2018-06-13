@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaf510f70fde4e73bba03f2de7eb1f1, type: 3}
-  m_Name: Punk_001_HeavyFire
+  m_Name: 002_Kyle_Detected
   m_EditorClassIdentifier: 
-  character: 1
-  line: I'm under heavy fire here!
-  audioClip: {fileID: 8300000, guid: e03df82f72f1b4285accae07a3b72f1a, type: 3}
+  character: 0
+  line: I detected a number of ships headed your way.
+  audioClip: {fileID: 8300000, guid: aa6226112440b4e4ab5fbdc8039f2a26, type: 3}

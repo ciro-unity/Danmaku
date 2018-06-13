@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaf510f70fde4e73bba03f2de7eb1f1, type: 3}
-  m_Name: Punk_XX2_Over
+  m_Name: 001_Kyle_Dont
   m_EditorClassIdentifier: 
-  character: 1
-  line: OK, it was just a small one!
-  audioClip: {fileID: 8300000, guid: d47242b2ea8cf49caba1ee853a2a7ae7, type: 3}
+  character: 0
+  line: Don't let your guard down.
+  audioClip: {fileID: 8300000, guid: 6f853c35994db468fa1492243e21bf0a, type: 3}

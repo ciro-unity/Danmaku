@@ -8,9 +8,8 @@ using System;
 public class BulletPatternDefinition : ScriptableObject
 {
 	public GameObject prefab;
-	public float startTime = 0f;
+	public float startDelay = 0f;
 	public float interval = 1f;
-	public int maxBullets = 0;
 	public float speed = 10f;
 	public Vector2 direction = new Vector2(-1f, -1f);
 }

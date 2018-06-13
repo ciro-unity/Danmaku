@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaf510f70fde4e73bba03f2de7eb1f1, type: 3}
-  m_Name: Punk_XX0_AsteroidField
+  m_Name: Ast_Punk_EnterField
   m_EditorClassIdentifier: 
   character: 1
   line: "I'm entering an asteroid field\u2026"

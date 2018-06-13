@@ -9,11 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e17609dd55d04446d98eff5721c0db1e, type: 3}
-  m_Name: UpLeft
+  m_Name: LeftUp_22
   m_EditorClassIdentifier: 
   prefab: {fileID: 1250554257016114, guid: b85448198e4164d6a922e1483ce0a562, type: 2}
-  startTime: 0
-  interval: 0.4
-  maxBullets: 0
-  speed: 50
-  direction: {x: -2, y: 1}
+  startDelay: 0
+  interval: 1
+  speed: 40
+  direction: {x: -1, y: 0.2}

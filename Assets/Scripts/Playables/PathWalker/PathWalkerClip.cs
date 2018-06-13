@@ -15,17 +15,17 @@ public class PathWalkerClip : PlayableAsset, ITimelineClipAsset
 
     public ClipCaps clipCaps
     {
-        get { return ClipCaps.Blending; }
+        get { return ClipCaps.None; }
     }
 
     //this forces the clip to be 1 second at the beginning
-    public override double duration
-    {
-        get
-        {
-            return 1d;
-        }
-    }
+    // public override double duration
+    // {
+    //     get
+    //     {
+    //         return 1d;
+    //     }
+    // }
 
     public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
     {

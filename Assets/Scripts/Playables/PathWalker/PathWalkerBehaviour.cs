@@ -59,7 +59,8 @@ public class PathWalkerBehaviour : PlayableBehaviour
         if(patternDefinition != null)
         {
             Transform poolContainerTransform = GameObject.Find("BulletPool").transform;
-            int nBullets = Mathf.CeilToInt((float)duration / patternDefinition.interval);
+            float actualShootingTime = Mathf.Max(0f, (float)duration - patternDefinition.startDelay);
+            int nBullets = Mathf.CeilToInt(actualShootingTime / patternDefinition.interval);
             bullets = new GameObject[nBullets];
             for(int i=0; i<bullets.Length; i++)
             {
@@ -120,7 +121,7 @@ public class PathWalkerBehaviour : PlayableBehaviour
                 if(bullets[i] == null)
                     continue;
 
-                float timeOfEmission = i * patternDefinition.interval;
+                float timeOfEmission = (i * patternDefinition.interval) + patternDefinition.startDelay;
                 
                 //Check if we actually need to move this bullet
                 bool bulletWasShot = timeOfEmission < globalClipTime;

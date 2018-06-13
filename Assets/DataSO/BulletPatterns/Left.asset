@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Left
   m_EditorClassIdentifier: 
   prefab: {fileID: 1250554257016114, guid: b85448198e4164d6a922e1483ce0a562, type: 2}
-  startTime: 0
+  startDelay: 0
   interval: 0.4
   maxBullets: 0
   speed: 40

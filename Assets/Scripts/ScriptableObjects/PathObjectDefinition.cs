@@ -35,6 +35,7 @@ public class PathObjectDefinition : ScriptableObject
 	public int energy = 2;
 
 	[SerializeField]
+	[Range(.1f, 1f)]
 	private float speed = .5f;
 	public float Speed {
 		get {
