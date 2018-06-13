@@ -1,7 +1,7 @@
 {
   "registry": "https://staging-packages.unity.com",
   "dependencies": {
-    "com.unity.cinemachine": "2.2.0-preview.5",
+    "com.unity.cinemachine": "2.2.0-preview.6",
     "com.unity.ads": "exclude",
     "com.unity.analytics": "exclude",
     "com.unity.standardevents": "exclude",
