@@ -2,6 +2,7 @@ using Unity.Jobs;
 using Unity.Entities;
 using Unity.Transforms;
 using Pure.Components;
+using Unity.Burst;
 using Unity.Collections;
 using UnityEngine;
 using Unity.Mathematics;
@@ -24,6 +25,7 @@ namespace Pure.Systems
 		[Inject]
 		Group group;
 
+		[BurstCompile]
 		private struct MovementJob : IJobParallelFor
 		{
 			public float deltaTime;
