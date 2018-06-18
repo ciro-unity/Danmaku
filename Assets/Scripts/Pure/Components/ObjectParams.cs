@@ -4,11 +4,43 @@ using Unity.Mathematics;
 
 namespace Pure.Components
 {
-	public struct ObjectParams : IComponentData
+	struct Speed : IComponentData
 	{
-		public float Speed;
-		public float Scaling;
-		public float3 InitialPos;
-		public float3 Orientation;
+		public float Value;
+
+		public Speed(float value)
+		{
+			Value = value;
+		}
+	}
+
+	struct Scaling : IComponentData
+	{
+		public float Value;
+
+		public Scaling(float value)
+		{
+			Value = value;
+		}
+	}
+
+	struct InitialPos : IComponentData
+	{
+		public float3 Value;
+
+		public InitialPos(float3 value)
+		{
+			Value = value;
+		}
+	}
+
+	struct Orientation : IComponentData
+	{
+		public quaternion Value;
+
+		public Orientation(quaternion value)
+		{
+			Value = value;
+		}
 	}
 }

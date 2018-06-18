@@ -23,7 +23,10 @@ namespace Pure
 			EntityManager entityManager = World.Active.GetOrCreateManager<EntityManager>();
 
 			Entity playerShipEntity = entityManager.CreateEntity(
-				ComponentType.Create<ObjectParams>(),
+				ComponentType.Create<Scaling>(),
+				ComponentType.Create<Speed>(),
+				ComponentType.Create<InitialPos>(),
+				ComponentType.Create<Orientation>(),
 				ComponentType.Create<TransformMatrix>(),
 				ComponentType.Create<MeshInstanceRenderer>()
 			);
@@ -38,14 +41,10 @@ namespace Pure
 			entityManager.Instantiate(playerShipEntity, instances);
 			foreach(Entity e in instances)
 			{
-				entityManager.SetComponentData<ObjectParams>(e,
-					new ObjectParams{
-						Scaling = Random.Range(.1f, .8f),
-						Speed = Random.Range(speed * .5f, speed * 2f),
-						InitialPos = Random.insideUnitSphere * 245f,
-						Orientation = Random.rotation.eulerAngles
-				}
-			);
+				entityManager.SetComponentData(e, new Scaling(Random.Range(.1f, .8f)));
+				entityManager.SetComponentData(e, new Speed(Random.Range(.5f, 2f) * speed));
+				entityManager.SetComponentData(e, new InitialPos(Random.insideUnitSphere * 245f));
+				entityManager.SetComponentData(e, new Orientation(Random.rotation));
 			}
 
 			entityManager.DestroyEntity(playerShipEntity);

@@ -2,6 +2,8 @@ using Unity.Jobs;
 using Unity.Entities;
 using Unity.Transforms;
 using Pure.Components;
+using Unity.Burst;
+using Unity.Collections;
 using UnityEngine;
 using Unity.Mathematics;
 
@@ -9,32 +11,65 @@ namespace Pure.Systems
 {
 	public class MovementSystem : JobComponentSystem
 	{
-		private struct MovementJob : IJobProcessComponentData<ObjectParams, TransformMatrix>
+		struct Group
+		{
+			public readonly int Length;
+			public ComponentDataArray<TransformMatrix> matrixArray;
+
+			[ReadOnly] public ComponentDataArray<Orientation> orientationArray;
+			[ReadOnly] public ComponentDataArray<InitialPos> initialPosArray;
+			[ReadOnly] public ComponentDataArray<Speed> speedArray;
+			[ReadOnly] public ComponentDataArray<Scaling> scalingArray;
+		}
+
+		[Inject]
+		Group group;
+
+		[BurstCompile]
+		private struct MovementJob : IJobParallelFor
 		{
 			public float deltaTime;
 			public float time;
+			public ComponentDataArray<TransformMatrix> matrixArray;
 
-			public void Execute(ref ObjectParams parameters, ref TransformMatrix matrix)
+			[ReadOnly] public ComponentDataArray<Orientation> orientationArray;
+			[ReadOnly] public ComponentDataArray<InitialPos> initialPosArray;
+			[ReadOnly] public ComponentDataArray<Speed> speedArray;
+			[ReadOnly] public ComponentDataArray<Scaling> scalingArray;
+
+			public void Execute(int index)
 			{
-				matrix.Value = math.mul(
-					math.rottrans(
-						math.lookRotationToQuaternion(
-							parameters.Orientation, new float3(0f,1f,0f)),
-							parameters.InitialPos + new float3 (-1f * time * parameters.Speed * 10f, 0f, 0f)),
-						math.scale(new float3(parameters.Scaling)));
+				var matrixComponent = matrixArray[index];
+
+				var orientation = orientationArray[index].Value;
+				var initialPos = initialPosArray[index].Value;
+				var speed = speedArray[index].Value;
+				var scaling = scalingArray[index].Value;
+
+				matrixComponent.Value = math.mul
+				(
+					math.rottrans(orientation, initialPos + new float3(-1f * time * speed * 10f, 0f, 0f)),
+					math.scale(new float3(scaling))
+				);
+
+				matrixArray[index] = matrixComponent;
 			}
 		}
 
-		
 		protected override JobHandle OnUpdate(JobHandle inputHandle)
 		{
 			MovementJob job = new MovementJob
 			{
 				deltaTime = Time.deltaTime,
 				time = Time.time,
+				matrixArray = group.matrixArray,
+				orientationArray = group.orientationArray,
+				initialPosArray = group.initialPosArray,
+				speedArray = group.speedArray,
+				scalingArray = group.scalingArray
 			};
 
-			return job.Schedule(this, 64, inputHandle);
+			return job.Schedule(group.Length, 64, inputHandle);
 		}
 	}
 }
