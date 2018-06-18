@@ -34,7 +34,10 @@ public class ECSPathWalkerBehaviour : PlayableBehaviour
 		meshInstRendSys = w.GetOrCreateManager<MeshInstanceRendererSystem>();
 
 		Entity playerShipEntity = entityManager.CreateEntity(
-			ComponentType.Create<ObjectParams>(),
+			ComponentType.Create<Scaling>(),
+			ComponentType.Create<Speed>(),
+			ComponentType.Create<InitialPos>(),
+			ComponentType.Create<Orientation>(),
 			ComponentType.Create<TransformMatrix>(),
 			ComponentType.Create<MeshInstanceRenderer>(),
 			ComponentType.Create<TimelineEntity>()
@@ -54,14 +57,10 @@ public class ECSPathWalkerBehaviour : PlayableBehaviour
 		entityManager.Instantiate(playerShipEntity, instances);
 		foreach(Entity e in instances)
 		{
-			entityManager.SetComponentData<ObjectParams>(e,
-				new ObjectParams{
-					Scaling = Random.Range(.1f, .8f),
-					Speed = Random.Range(objectDefinition.Speed * .5f, objectDefinition.Speed * 2f),
-					InitialPos = Random.insideUnitSphere * 245f,
-					Orientation = Random.rotation.eulerAngles
-				}
-			);
+			entityManager.SetComponentData(e, new Scaling(Random.Range(.1f, .8f)));
+			entityManager.SetComponentData(e, new Speed(Random.Range(.5f, 2f) * objectDefinition.Speed));
+			entityManager.SetComponentData(e, new InitialPos(Random.insideUnitSphere * 245f));
+			entityManager.SetComponentData(e, new Orientation(Random.rotation));
 		}
 
 		entityManager.DestroyEntity(playerShipEntity);

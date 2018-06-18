@@ -18,7 +18,12 @@ namespace Pure.Systems
 		{
 			public readonly int Length;
 			public ComponentDataArray<TransformMatrix> matrixArray;
-			[ReadOnly] public ComponentDataArray<ObjectParams> parametersArray;
+
+			[ReadOnly] public ComponentDataArray<Orientation> orientationArray;
+			[ReadOnly] public ComponentDataArray<InitialPos> initialPosArray;
+			[ReadOnly] public ComponentDataArray<Speed> speedArray;
+			[ReadOnly] public ComponentDataArray<Scaling> scalingArray;
+
 			[ReadOnly] ComponentDataArray<TimelineEntity> timelinesArray;
 		}
 
@@ -28,23 +33,29 @@ namespace Pure.Systems
 		struct MovementJob : IJobParallelFor
 		{
 			public float time;
-
 			public ComponentDataArray<TransformMatrix> matrixArray;
-			[ReadOnly] public ComponentDataArray<ObjectParams> parametersArray;
+
+			[ReadOnly] public ComponentDataArray<Orientation> orientationArray;
+			[ReadOnly] public ComponentDataArray<InitialPos> initialPosArray;
+			[ReadOnly] public ComponentDataArray<Speed> speedArray;
+			[ReadOnly] public ComponentDataArray<Scaling> scalingArray;
 
 			public void Execute(int index)
 			{
-				var matrix = matrixArray[index];
-				var parameters = parametersArray[index];
+				var matrixComponent = matrixArray[index];
 
-				matrix.Value = math.mul(
-					math.rottrans(
-						math.lookRotationToQuaternion(
-							parameters.Orientation, new float3(0f,1f,0f)),
-							parameters.InitialPos + new float3 (-1f * time * parameters.Speed * 30f, 0f, 0f)),
-						math.scale(new float3(parameters.Scaling)));
+				var orientation = orientationArray[index].Value;
+				var initialPos = initialPosArray[index].Value;
+				var speed = speedArray[index].Value;
+				var scaling = scalingArray[index].Value;
 
-				matrixArray[index] = matrix;
+				matrixComponent.Value = math.mul
+				(
+					math.rottrans(orientation, initialPos + new float3(-1f * time * speed * 30f, 0f, 0f)),
+					math.scale(new float3(scaling))
+				);
+
+				matrixArray[index] = matrixComponent;
 			}
 		}
 
@@ -54,7 +65,10 @@ namespace Pure.Systems
 			{
 				time = clipTime,
 				matrixArray = group.matrixArray,
-				parametersArray = group.parametersArray
+				orientationArray = group.orientationArray,
+				initialPosArray = group.initialPosArray,
+				speedArray = group.speedArray,
+				scalingArray = group.scalingArray
 			};
 
 			return job.Schedule(group.Length, 64, inputHandle);
