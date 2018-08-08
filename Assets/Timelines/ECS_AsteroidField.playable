@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 3.5347843170166016
+  - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114727424019507314}
     m_Duration: 40
