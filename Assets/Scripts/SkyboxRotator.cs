@@ -9,7 +9,10 @@ public class SkyboxRotator : MonoBehaviour {
 
 	void Start ()
 	{
-		skyboxMaterial = RenderSettings.skybox;
+		//we clone the material so we don't actually modify the asset
+		skyboxMaterial = new Material(RenderSettings.skybox);
+		skyboxMaterial.name = "Runtime Skybox";
+		RenderSettings.skybox = skyboxMaterial;
 	}
 	
 	void Update ()

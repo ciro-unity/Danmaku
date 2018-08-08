@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 	private CameraManager cameraManager;
 	private AudioManager audioManager;
 	private GameManager gameManager;
-	private Rigidbody2D rigidbody2D;
+	private new Rigidbody2D rigidbody2D;
 	private Animator animator;
 	private Vector2 movement, rawMovement;
 	private Vector2 speedOperations;
