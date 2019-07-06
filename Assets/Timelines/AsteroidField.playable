@@ -3,15 +3,16 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
   m_Name: AsteroidField
   m_EditorClassIdentifier: 
-  m_NextId: 0
+  m_Version: 0
   m_Tracks:
   - {fileID: 114270126047745570}
   - {fileID: 114088822643698548}
@@ -20,12 +21,13 @@ MonoBehaviour:
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
-  m_Version: 0
+  m_MarkerTrack: {fileID: 0}
 --- !u!114 &114005330606675516
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -70,8 +72,9 @@ MonoBehaviour:
 --- !u!114 &114009940257956702
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -116,22 +119,26 @@ MonoBehaviour:
 --- !u!114 &114022560118741806
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (2)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114270126047745570}
   m_Children: []
   m_Clips:
-  - m_Start: 1.9333333333333333
+  - m_Version: 1
+    m_Start: 1.9333333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114509185196953252}
     m_Duration: 1
@@ -139,8 +146,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -163,8 +170,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 5.116666666666666
+  - m_Version: 1
+    m_Start: 5.116666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114808305466091030}
     m_Duration: 1
@@ -172,8 +179,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -196,8 +203,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 10.166666666666666
+  - m_Version: 1
+    m_Start: 10.166666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114366927741325248}
     m_Duration: 1
@@ -205,8 +212,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -229,8 +236,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 12.3
+  - m_Version: 1
+    m_Start: 12.3
     m_ClipIn: 0
     m_Asset: {fileID: 114754934146195920}
     m_Duration: 1
@@ -238,8 +245,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -262,8 +269,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 14.966666666666667
+  - m_Version: 1
+    m_Start: 14.966666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114340393123264160}
     m_Duration: 1
@@ -271,8 +278,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -295,8 +302,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 19.433333333333334
+  - m_Version: 1
+    m_Start: 19.433333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 114925441102033318}
     m_Duration: 1
@@ -304,8 +311,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -328,8 +335,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 21.116666666666667
+  - m_Version: 1
+    m_Start: 21.116666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114181334598882864}
     m_Duration: 1
@@ -337,8 +344,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114022560118741806}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -361,13 +368,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114029170307499310
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -412,8 +420,9 @@ MonoBehaviour:
 --- !u!114 &114057747935427000
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -458,8 +467,9 @@ MonoBehaviour:
 --- !u!114 &114070126462355584
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -504,18 +514,21 @@ MonoBehaviour:
 --- !u!114 &114088822643698548
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1544527758, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
   m_Name: Far lanes
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children:
   - {fileID: 114512715256590194}
@@ -524,12 +537,14 @@ MonoBehaviour:
   - {fileID: 114442152827317140}
   - {fileID: 114271352871235936}
   m_Clips: []
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114127813218267684
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -541,8 +556,9 @@ MonoBehaviour:
 --- !u!114 &114129772387020482
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -587,8 +603,9 @@ MonoBehaviour:
 --- !u!114 &114131763905870372
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -633,8 +650,9 @@ MonoBehaviour:
 --- !u!114 &114138272459000386
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -679,8 +697,9 @@ MonoBehaviour:
 --- !u!114 &114139290149171320
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -725,8 +744,9 @@ MonoBehaviour:
 --- !u!114 &114139584750079484
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -771,8 +791,9 @@ MonoBehaviour:
 --- !u!114 &114142269346893064
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -817,8 +838,9 @@ MonoBehaviour:
 --- !u!114 &114143996228525358
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -863,8 +885,9 @@ MonoBehaviour:
 --- !u!114 &114165528813970226
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -909,8 +932,9 @@ MonoBehaviour:
 --- !u!114 &114168739446678960
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -955,8 +979,9 @@ MonoBehaviour:
 --- !u!114 &114181282823209022
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1001,8 +1026,9 @@ MonoBehaviour:
 --- !u!114 &114181334598882864
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1047,8 +1073,9 @@ MonoBehaviour:
 --- !u!114 &114187055026925010
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1093,8 +1120,9 @@ MonoBehaviour:
 --- !u!114 &114188641378751096
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1139,22 +1167,26 @@ MonoBehaviour:
 --- !u!114 &114224077198191930
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (7)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114088822643698548}
   m_Children: []
   m_Clips:
-  - m_Start: 1.9333333333333333
+  - m_Version: 1
+    m_Start: 1.9333333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114165528813970226}
     m_Duration: 1
@@ -1162,8 +1194,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114224077198191930}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -1222,8 +1254,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 9.5
+  - m_Version: 1
+    m_Start: 9.5
     m_ClipIn: 0
     m_Asset: {fileID: 114446768913362312}
     m_Duration: 1
@@ -1231,8 +1263,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114224077198191930}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1255,8 +1287,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 14.850000000000001
+  - m_Version: 1
+    m_Start: 14.850000000000001
     m_ClipIn: 0
     m_Asset: {fileID: 114005330606675516}
     m_Duration: 1
@@ -1264,8 +1296,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114224077198191930}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1288,8 +1320,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 21.650000000000333
+  - m_Version: 1
+    m_Start: 21.650000000000333
     m_ClipIn: 0
     m_Asset: {fileID: 114604342354653934}
     m_Duration: 1
@@ -1297,8 +1329,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114224077198191930}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1321,13 +1353,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114242318380081628
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1372,22 +1405,26 @@ MonoBehaviour:
 --- !u!114 &114246904046398400
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (1)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114270126047745570}
   m_Children: []
   m_Clips:
-  - m_Start: 0.9999999999999996
+  - m_Version: 1
+    m_Start: 0.9999999999999996
     m_ClipIn: 0
     m_Asset: {fileID: 114138272459000386}
     m_Duration: 1
@@ -1395,8 +1432,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1419,8 +1456,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 4.1
+  - m_Version: 1
+    m_Start: 4.1
     m_ClipIn: 0
     m_Asset: {fileID: 114341940031278616}
     m_Duration: 1
@@ -1428,8 +1465,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1452,8 +1489,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 5.783333333333333
+  - m_Version: 1
+    m_Start: 5.783333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114446923498164204}
     m_Duration: 1
@@ -1461,8 +1498,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1485,8 +1522,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 8.483333333333333
+  - m_Version: 1
+    m_Start: 8.483333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114139290149171320}
     m_Duration: 1
@@ -1494,8 +1531,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1518,8 +1555,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 13.283333333333333
+  - m_Version: 1
+    m_Start: 13.283333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114242318380081628}
     m_Duration: 1
@@ -1527,8 +1564,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1551,8 +1588,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 17.133333333333333
+  - m_Version: 1
+    m_Start: 17.133333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114836468795701558}
     m_Duration: 1
@@ -1560,8 +1597,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1584,8 +1621,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 18.816666666666666
+  - m_Version: 1
+    m_Start: 18.816666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114756403029819544}
     m_Duration: 1
@@ -1593,8 +1630,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1617,8 +1654,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 20.5
+  - m_Version: 1
+    m_Start: 20.5
     m_ClipIn: 0
     m_Asset: {fileID: 114954382881348154}
     m_Duration: 1
@@ -1626,8 +1663,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114246904046398400}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1650,13 +1687,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114247571461146892
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1701,8 +1739,9 @@ MonoBehaviour:
 --- !u!114 &114258314845698022
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1747,8 +1786,9 @@ MonoBehaviour:
 --- !u!114 &114267545806217200
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1793,18 +1833,21 @@ MonoBehaviour:
 --- !u!114 &114270126047745570
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1544527758, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
   m_Name: Close lanes
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children:
   - {fileID: 114363996200720812}
@@ -1814,26 +1857,31 @@ MonoBehaviour:
   - {fileID: 114857270503276268}
   - {fileID: 114701598555575262}
   m_Clips: []
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114271352871235936
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (9)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114088822643698548}
   m_Children: []
   m_Clips:
-  - m_Start: 2.683333333333333
+  - m_Version: 1
+    m_Start: 2.683333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114818672713922780}
     m_Duration: 1
@@ -1841,8 +1889,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114271352871235936}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -1901,8 +1949,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 5.116666666666666
+  - m_Version: 1
+    m_Start: 5.116666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114856707707050410}
     m_Duration: 1
@@ -1910,8 +1958,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114271352871235936}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1934,8 +1982,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 10.616666666666667
+  - m_Version: 1
+    m_Start: 10.616666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114181282823209022}
     m_Duration: 1
@@ -1943,8 +1991,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114271352871235936}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1967,8 +2015,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 15.966666666666669
+  - m_Version: 1
+    m_Start: 15.966666666666669
     m_ClipIn: 0
     m_Asset: {fileID: 114258314845698022}
     m_Duration: 1
@@ -1976,8 +2024,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114271352871235936}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2000,8 +2048,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 17.416666666667
+  - m_Version: 1
+    m_Start: 17.416666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114009940257956702}
     m_Duration: 1
@@ -2009,8 +2057,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114271352871235936}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2033,8 +2081,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 22.766666666667
+  - m_Version: 1
+    m_Start: 22.766666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114070126462355584}
     m_Duration: 1
@@ -2042,8 +2090,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114271352871235936}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2066,13 +2114,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114297265729958294
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2117,8 +2166,9 @@ MonoBehaviour:
 --- !u!114 &114300066194092608
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2163,8 +2213,9 @@ MonoBehaviour:
 --- !u!114 &114308710992368190
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2209,8 +2260,9 @@ MonoBehaviour:
 --- !u!114 &114340393123264160
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2255,8 +2307,9 @@ MonoBehaviour:
 --- !u!114 &114341940031278616
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2301,22 +2354,26 @@ MonoBehaviour:
 --- !u!114 &114363996200720812
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114270126047745570}
   m_Children: []
   m_Clips:
-  - m_Start: 1.9333333333333333
+  - m_Version: 1
+    m_Start: 1.9333333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114599717389508288}
     m_Duration: 1
@@ -2324,8 +2381,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2348,8 +2405,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 0
+  - m_Version: 1
+    m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114267545806217200}
     m_Duration: 1
@@ -2357,8 +2414,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2399,8 +2456,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 7.250000000000001
+  - m_Version: 1
+    m_Start: 7.250000000000001
     m_ClipIn: 0
     m_Asset: {fileID: 114300066194092608}
     m_Duration: 1
@@ -2408,8 +2465,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2432,8 +2489,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 10.166666666666666
+  - m_Version: 1
+    m_Start: 10.166666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114142269346893064}
     m_Duration: 1
@@ -2441,8 +2498,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2465,8 +2522,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 29.833333333333332
+  - m_Version: 1
+    m_Start: 29.833333333333332
     m_ClipIn: 0
     m_Asset: {fileID: 114143996228525358}
     m_Duration: 1
@@ -2474,8 +2531,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2498,8 +2555,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: End
-    m_Version: 1
-  - m_Start: 20.283333333333335
+  - m_Version: 1
+    m_Start: 20.283333333333335
     m_ClipIn: 0
     m_Asset: {fileID: 114944960634639236}
     m_Duration: 1
@@ -2507,8 +2564,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2531,8 +2588,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 12.966666666666667
+  - m_Version: 1
+    m_Start: 12.966666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114139584750079484}
     m_Duration: 1
@@ -2540,8 +2597,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2564,8 +2621,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 14.283333333333333
+  - m_Version: 1
+    m_Start: 14.283333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114516641712022700}
     m_Duration: 1
@@ -2573,8 +2630,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2597,8 +2654,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 15.966666666666667
+  - m_Version: 1
+    m_Start: 15.966666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114129772387020482}
     m_Duration: 1
@@ -2606,8 +2663,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114363996200720812}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2630,13 +2687,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114366927741325248
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2681,8 +2739,9 @@ MonoBehaviour:
 --- !u!114 &114369200741268464
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2727,8 +2786,9 @@ MonoBehaviour:
 --- !u!114 &114408982264032904
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2773,8 +2833,9 @@ MonoBehaviour:
 --- !u!114 &114415923510494526
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2819,8 +2880,9 @@ MonoBehaviour:
 --- !u!114 &114427481151076326
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2865,22 +2927,26 @@ MonoBehaviour:
 --- !u!114 &114442152827317140
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (8)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114088822643698548}
   m_Children: []
   m_Clips:
-  - m_Start: 0.7333333333333325
+  - m_Version: 1
+    m_Start: 0.7333333333333325
     m_ClipIn: 0
     m_Asset: {fileID: 114904419482488442}
     m_Duration: 1
@@ -2888,8 +2954,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114442152827317140}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -2948,8 +3014,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 5.783333333333333
+  - m_Version: 1
+    m_Start: 5.783333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114297265729958294}
     m_Duration: 1
@@ -2957,8 +3023,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114442152827317140}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -2981,8 +3047,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 13.283333333333333
+  - m_Version: 1
+    m_Start: 13.283333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114131763905870372}
     m_Duration: 1
@@ -2990,8 +3056,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114442152827317140}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3014,8 +3080,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 11.133333333333336
+  - m_Version: 1
+    m_Start: 11.133333333333336
     m_ClipIn: 0
     m_Asset: {fileID: 114621421372540102}
     m_Duration: 1
@@ -3023,8 +3089,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114442152827317140}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3047,8 +3113,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 17.93333333333367
+  - m_Version: 1
+    m_Start: 17.93333333333367
     m_ClipIn: 0
     m_Asset: {fileID: 114308710992368190}
     m_Duration: 1
@@ -3056,8 +3122,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114442152827317140}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3080,8 +3146,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 20.08333333333367
+  - m_Version: 1
+    m_Start: 20.08333333333367
     m_ClipIn: 0
     m_Asset: {fileID: 114749190661073578}
     m_Duration: 1
@@ -3089,8 +3155,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114442152827317140}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3113,13 +3179,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114444233756839992
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3164,8 +3231,9 @@ MonoBehaviour:
 --- !u!114 &114444531506069356
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3210,8 +3278,9 @@ MonoBehaviour:
 --- !u!114 &114446768913362312
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3256,8 +3325,9 @@ MonoBehaviour:
 --- !u!114 &114446923498164204
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3302,8 +3372,9 @@ MonoBehaviour:
 --- !u!114 &114455259872674386
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3348,22 +3419,26 @@ MonoBehaviour:
 --- !u!114 &114480405283570518
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (3)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114270126047745570}
   m_Children: []
   m_Clips:
-  - m_Start: 13.966666666666667
+  - m_Version: 1
+    m_Start: 13.966666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114188641378751096}
     m_Duration: 1
@@ -3371,8 +3446,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3395,8 +3470,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 8.483333333333333
+  - m_Version: 1
+    m_Start: 8.483333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114168739446678960}
     m_Duration: 1
@@ -3404,8 +3479,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3428,8 +3503,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 5.783333333333333
+  - m_Version: 1
+    m_Start: 5.783333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114673603806121748}
     m_Duration: 1
@@ -3437,8 +3512,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3461,8 +3536,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 0.25
+  - m_Version: 1
+    m_Start: 0.25
     m_ClipIn: 0
     m_Asset: {fileID: 114995034602424970}
     m_Duration: 1
@@ -3470,8 +3545,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3494,8 +3569,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 18.816666666666666
+  - m_Version: 1
+    m_Start: 18.816666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114579129121005772}
     m_Duration: 1
@@ -3503,8 +3578,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3527,8 +3602,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 3.1666666666666665
+  - m_Version: 1
+    m_Start: 3.1666666666666665
     m_ClipIn: 0
     m_Asset: {fileID: 114809520302065158}
     m_Duration: 1
@@ -3536,8 +3611,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3560,8 +3635,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 10.616666666666667
+  - m_Version: 1
+    m_Start: 10.616666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114920023670322396}
     m_Duration: 1
@@ -3569,8 +3644,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114480405283570518}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -3593,13 +3668,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114486793683865092
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3644,8 +3720,9 @@ MonoBehaviour:
 --- !u!114 &114509185196953252
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3690,22 +3767,26 @@ MonoBehaviour:
 --- !u!114 &114510514348689762
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99bbbe9d757694befafc468a417e4e38, type: 3}
   m_Name: Dialogue Track
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 1.9
+  - m_Version: 1
+    m_Start: 1.9
     m_ClipIn: 0
     m_Asset: {fileID: 114624053528016070}
     m_Duration: 5
@@ -3773,8 +3854,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: DialogueClip
-    m_Version: 1
-  - m_Start: 7.1333333333333355
+  - m_Version: 1
+    m_Start: 7.1333333333333355
     m_ClipIn: 0
     m_Asset: {fileID: 114648489089743306}
     m_Duration: 5
@@ -3842,8 +3923,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: DialogueClip
-    m_Version: 1
-  - m_Start: 23.766666666667
+  - m_Version: 1
+    m_Start: 23.766666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114127813218267684}
     m_Duration: 5
@@ -3911,27 +3992,31 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: DialogueClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114512715256590194
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (5)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114088822643698548}
   m_Children: []
   m_Clips:
-  - m_Start: 6.8
+  - m_Version: 1
+    m_Start: 6.8
     m_ClipIn: 0
     m_Asset: {fileID: 114576103339888840}
     m_Duration: 1
@@ -3939,8 +4024,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -3999,8 +4084,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 4.1
+  - m_Version: 1
+    m_Start: 4.1
     m_ClipIn: 0
     m_Asset: {fileID: 114247571461146892}
     m_Duration: 1
@@ -4008,8 +4093,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -4068,8 +4153,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 10.166666666666666
+  - m_Version: 1
+    m_Start: 10.166666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114938295801373682}
     m_Duration: 1
@@ -4077,8 +4162,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4101,8 +4186,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 13.966666666666667
+  - m_Version: 1
+    m_Start: 13.966666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114408982264032904}
     m_Duration: 1
@@ -4110,8 +4195,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4134,8 +4219,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 12.15
+  - m_Version: 1
+    m_Start: 12.15
     m_ClipIn: 0
     m_Asset: {fileID: 114444233756839992}
     m_Duration: 1
@@ -4143,8 +4228,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4167,8 +4252,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 15.516666666666666
+  - m_Version: 1
+    m_Start: 15.516666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114057747935427000}
     m_Duration: 1
@@ -4176,8 +4261,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -4218,8 +4303,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 16.966666666667
+  - m_Version: 1
+    m_Start: 16.966666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114187055026925010}
     m_Duration: 1
@@ -4227,8 +4312,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4251,8 +4336,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 18.950000000000333
+  - m_Version: 1
+    m_Start: 18.950000000000333
     m_ClipIn: 0
     m_Asset: {fileID: 114369200741268464}
     m_Duration: 1
@@ -4260,8 +4345,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4284,8 +4369,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 20.766666666667
+  - m_Version: 1
+    m_Start: 20.766666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114029170307499310}
     m_Duration: 1
@@ -4293,8 +4378,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4317,8 +4402,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 22.316666666666997
+  - m_Version: 1
+    m_Start: 22.316666666666997
     m_ClipIn: 0
     m_Asset: {fileID: 114882443569013852}
     m_Duration: 1
@@ -4326,8 +4411,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114512715256590194}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -4368,13 +4453,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114516641712022700
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4419,22 +4505,26 @@ MonoBehaviour:
 --- !u!114 &114537162340513130
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (6)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114088822643698548}
   m_Children: []
   m_Clips:
-  - m_Start: 8.933333333333334
+  - m_Version: 1
+    m_Start: 8.933333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 114844319024680442}
     m_Duration: 1
@@ -4442,8 +4532,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114537162340513130}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4466,8 +4556,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 6.8
+  - m_Version: 1
+    m_Start: 6.8
     m_ClipIn: 0
     m_Asset: {fileID: 114841176905360642}
     m_Duration: 1
@@ -4475,8 +4565,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114537162340513130}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4499,8 +4589,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 12.15
+  - m_Version: 1
+    m_Start: 12.15
     m_ClipIn: 0
     m_Asset: {fileID: 114486793683865092}
     m_Duration: 1
@@ -4508,8 +4598,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114537162340513130}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4532,8 +4622,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 14.283333333333333
+  - m_Version: 1
+    m_Start: 14.283333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114455259872674386}
     m_Duration: 1
@@ -4541,8 +4631,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114537162340513130}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4565,8 +4655,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 18.950000000000333
+  - m_Version: 1
+    m_Start: 18.950000000000333
     m_ClipIn: 0
     m_Asset: {fileID: 114765130191558704}
     m_Duration: 1
@@ -4574,8 +4664,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114537162340513130}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4598,8 +4688,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 21.083333333333666
+  - m_Version: 1
+    m_Start: 21.083333333333666
     m_ClipIn: 0
     m_Asset: {fileID: 114927419359679000}
     m_Duration: 1
@@ -4607,8 +4697,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114537162340513130}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -4631,13 +4721,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114576103339888840
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4682,8 +4773,9 @@ MonoBehaviour:
 --- !u!114 &114579129121005772
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4728,8 +4820,9 @@ MonoBehaviour:
 --- !u!114 &114582022236500590
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4783,8 +4876,9 @@ MonoBehaviour:
 --- !u!114 &114599717389508288
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4829,8 +4923,9 @@ MonoBehaviour:
 --- !u!114 &114604342354653934
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4875,8 +4970,9 @@ MonoBehaviour:
 --- !u!114 &114621421372540102
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4921,8 +5017,9 @@ MonoBehaviour:
 --- !u!114 &114624053528016070
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4934,8 +5031,9 @@ MonoBehaviour:
 --- !u!114 &114648489089743306
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4947,8 +5045,9 @@ MonoBehaviour:
 --- !u!114 &114673603806121748
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4993,22 +5092,26 @@ MonoBehaviour:
 --- !u!114 &114701598555575262
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (5)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114270126047745570}
   m_Children: []
   m_Clips:
-  - m_Start: 5.783333333333333
+  - m_Version: 1
+    m_Start: 5.783333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114977575997244554}
     m_Duration: 1
@@ -5016,8 +5119,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114701598555575262}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -5040,8 +5143,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 14.966666666666667
+  - m_Version: 1
+    m_Start: 14.966666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114582022236500590}
     m_Duration: 1
@@ -5049,8 +5152,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114701598555575262}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -5091,13 +5194,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114749190661073578
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5142,8 +5246,9 @@ MonoBehaviour:
 --- !u!114 &114754934146195920
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5188,8 +5293,9 @@ MonoBehaviour:
 --- !u!114 &114756403029819544
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5234,8 +5340,9 @@ MonoBehaviour:
 --- !u!114 &114765130191558704
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5280,8 +5387,9 @@ MonoBehaviour:
 --- !u!114 &114787858807357192
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5326,8 +5434,9 @@ MonoBehaviour:
 --- !u!114 &114808305466091030
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5372,8 +5481,9 @@ MonoBehaviour:
 --- !u!114 &114809520302065158
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5418,8 +5528,9 @@ MonoBehaviour:
 --- !u!114 &114818672713922780
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5464,8 +5575,9 @@ MonoBehaviour:
 --- !u!114 &114836468795701558
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5510,8 +5622,9 @@ MonoBehaviour:
 --- !u!114 &114841176905360642
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5556,8 +5669,9 @@ MonoBehaviour:
 --- !u!114 &114844319024680442
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5602,8 +5716,9 @@ MonoBehaviour:
 --- !u!114 &114856707707050410
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5648,22 +5763,26 @@ MonoBehaviour:
 --- !u!114 &114857270503276268
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e01cd2602a86b4a44bb87044f5b8be88, type: 3}
   m_Name: Path Walker Track (4)
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 0}
+  m_Curves: {fileID: 0}
   m_Parent: {fileID: 114270126047745570}
   m_Children: []
   m_Clips:
-  - m_Start: 12.85
+  - m_Version: 1
+    m_Start: 12.85
     m_ClipIn: 0
     m_Asset: {fileID: 114415923510494526}
     m_Duration: 1
@@ -5671,8 +5790,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114857270503276268}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -5695,8 +5814,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 10.616666666666667
+  - m_Version: 1
+    m_Start: 10.616666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114444531506069356}
     m_Duration: 1
@@ -5704,8 +5823,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114857270503276268}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -5728,8 +5847,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 4.1
+  - m_Version: 1
+    m_Start: 4.1
     m_ClipIn: 0
     m_Asset: {fileID: 114787858807357192}
     m_Duration: 1
@@ -5737,8 +5856,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114857270503276268}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -5779,8 +5898,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  - m_Start: 17.133333333333333
+  - m_Version: 1
+    m_Start: 17.133333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114427481151076326}
     m_Duration: 1
@@ -5788,8 +5907,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114857270503276268}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -5830,13 +5949,14 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: PathWalkerClip
-    m_Version: 1
-  m_Version: 1
+  m_Markers:
+    m_Objects: []
 --- !u!114 &114882443569013852
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5881,8 +6001,9 @@ MonoBehaviour:
 --- !u!114 &114904419482488442
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5927,8 +6048,9 @@ MonoBehaviour:
 --- !u!114 &114920023670322396
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5973,8 +6095,9 @@ MonoBehaviour:
 --- !u!114 &114925441102033318
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6019,8 +6142,9 @@ MonoBehaviour:
 --- !u!114 &114927419359679000
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6065,8 +6189,9 @@ MonoBehaviour:
 --- !u!114 &114938295801373682
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6111,8 +6236,9 @@ MonoBehaviour:
 --- !u!114 &114944960634639236
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6157,8 +6283,9 @@ MonoBehaviour:
 --- !u!114 &114954382881348154
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6203,8 +6330,9 @@ MonoBehaviour:
 --- !u!114 &114977575997244554
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6249,8 +6377,9 @@ MonoBehaviour:
 --- !u!114 &114995034602424970
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
